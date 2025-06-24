@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krish Mishra | Digital Innovator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <div class="noise-overlay"></div>
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">KRISH</span>
+                <span class="logo-bracket">/&gt;</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-content">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#skills" class="mobile-link">Skills</a>
+            <a href="#experience" class="mobile-link">Experience</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+        </div>
+    </div>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-image">
+                        <div class="image-wrapper">
+                            <img src="photo.jpg" alt="Krish Mishra" class="profile-img">
+                            <div class="image-glow"></div>
+                        </div>
+                    </div>
+                    <div class="hero-text">
+                        <div class="typing-container">
+                            <span class="greeting">Hello, I'm</span>
+                            <h1 class="hero-name">Krish Mishra</h1>
+                            <div class="typing-wrapper">
+                                <span class="typing-text" id="typing-text"></span>
+                                <span class="cursor-blink">|</span>
+                            </div>
+                        </div>
+                        <p class="hero-description">
+                            Strategic communicator and tech enthusiast crafting digital experiences
+                            that bridge creativity with innovation.
+                        </p>
+                        <div class="hero-buttons">
+                            <button class="btn-primary" data-scroll="contact">
+                                <i class="fas fa-rocket"></i>
+                                Let's Connect
+                            </button>
+                            <button class="btn-secondary" data-scroll="about">
+                                <i class="fas fa-user"></i>
+                                About Me
+                            </button>
+                        </div>
+                        <div class="scroll-indicator">
+                            <div class="scroll-line"></div>
+                            <span>Scroll to explore</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">01</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-intro">
+                            I'm a Computer Science student at UPES Dehradun, where I blend
+                            technical expertise with strategic communication and leadership.
+                        </p>
+                        <p>
+                            Currently serving as the PR & Sponsorship Head of ACM-W, I've
+                            successfully orchestrated nationwide campaigns and spearheaded
+                            multiple high-impact event promotions.
+                        </p>
+                        <p>
+                            My passion lies at the intersection of innovation, community
+                            building, and personal discipline, where I strive to create
+                            meaningful connections and drive positive change.
+                        </p>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="20">7</div>
+                                <div class="stat-label">Projects</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="5">8</div>
+                                <div class="stat-label">Leadership Roles</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="100">9</div>
+                                <div class="stat-label">Events Managed</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual">
+                        <div class="code-block">
+                            <div class="code-header">
+                                <div class="code-dots">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                </div>
+                                <span class="file-name">krish.js</span>
+                            </div>
+                            <div class="code-content">
+                                <div class="code-line">
+                                    <span class="keyword">const</span>
+                                    <span class="variable">krish</span>
+                                    <span class="operator">=</span>
+                                    <span class="bracket">{</span>
+                                </div>
+                                <div class="code-line indent">
+                                    <span class="property">role</span><span class="operator">:</span>
+                                    <span class="string">"PR & Sponsorship Head"</span><span class="operator">,</span>
+                                </div>
+                                <div class="code-line indent">
+                                    <span class="property">location</span><span class="operator">:</span>
+                                    <span class="string">"Dehradun, India"</span><span class="operator">,</span>
+                                </div>
+                                <div class="code-line indent">
+                                    <span class="property">skills</span><span class="operator">:</span>
+                                    <span class="bracket">[</span><span class="string">"Leadership"</span><span class="operator">,</span>
+                                    <span class="string">"Strategy"</span><span class="bracket">]</span><span class="operator">,</span>
+                                </div>
+                                <div class="code-line indent">
+                                    <span class="property">motto</span><span class="operator">:</span>
+                                    <span class="string">"Discipline is my way of life"</span>
+                                </div>
+                                <div class="code-line">
+                                    <span class="bracket">}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">02</span>
+                    <h2 class="section-title">Skills & Expertise</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-code"></i>
+                            <h3>Technical</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">C</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">HTML</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                                <div class="skill-item">
+                                <span class="skill-name">CSS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                            </div>
+                            </div>
+                            <!-- <div class="skill-item">
+                                <span class="skill-name">GitHub</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-palette"></i>
+                            <h3>Design</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Canva</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">UI/UX</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75"></div>
+                                </div>
+                            </div>
+                <div class="skill-item">
+                                <span class="skill-name">Banner Design</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-bullhorn"></i>
+                            <h3>Marketing</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Digital Marketing</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="92"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Content Strategy</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="92"></div>
+                                </div>
+                            </div>
+                             <div class="skill-item">
+                                <span class="skill-name">Social Media Marketing</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">03</span>
+                    <h2 class="section-title">Experience</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Present</div>
+                            <h3>PR & Sponsorship Head</h3>
+                            <p>ACM-W</p>
+                            <div class="timeline-description">
+                                Leading strategic communication initiatives and managing
+                                sponsorship portfolios for nationwide campaigns.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2024-PRESENT</div>
+                            <h3>Discipline Committee Member</h3>
+                            <p>College</p>
+                            <div class="timeline-description">
+                                Maintained institutional standards and fostered positive
+                                campus culture through effective leadership.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2024</div>
+                            <h3>Events Core Committee Member</h3>
+                            <p>College</p>
+                            <div class="timeline-description">
+                                Coordinated large-scale events and managed cross-functional
+                                teams to ensure seamless execution.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2022-23</div>
+                            <h3>Discipline Incharge</h3>
+                            <p>Class 11 & 12 (School)</p>
+                            <div class="timeline-description">
+                                Developed leadership skills by maintaining classroom
+                                discipline and supporting peer academic growth.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="certifications">
+                    <h3>Certifications</h3>
+                    <div class="cert-grid">
+                        <div class="cert-card">
+                            <div class="cert-icon">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <div class="cert-content">
+                                <h4>Global Game Jam</h4>
+                                <p>Game Development</p>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="cert-content">
+                                <h4>ICMLDE</h4>
+                                <p>Machine Learning Conference</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">04</span>
+                    <h2 class="section-title">Let's Connect</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-text">
+                        <h3>Ready to collaborate?</h3>
+                        <p>
+                            I'm always excited to connect with like-minded individuals
+                            and explore opportunities for meaningful collaboration.
+                        </p>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Dehradun, India</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>krishmishra121301@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+  <form class="form" id="contact-form">
+  <div class="form-group">
+    <input type="text" name="from_name" placeholder="Your Name" required />
+  </div>
+  <div class="form-group">
+    <input type="email" name="reply_to" placeholder="Your Email" required />
+  </div>
+  <div class="form-group">
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+  </div>
+  <button type="submit" class="btn-primary">
+    <i class="fas fa-paper-plane"></i>
+    <span class="btn-text">Send Message</span>
+    <span class="btn-loading" style="display: none;">
+      <i class="fas fa-spinner fa-spin"></i>
+      Sending...
+    </span>
+  </button>
+</form>
+</div>
+                </div>
+                <div class="social-links">
+                    <a href="mailto:krishmishra121301@gmail.com" class="social-link email">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://github.com/kri297" target="_blank" rel="noopener noreferrer" class="social-link github">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/krish-mishra-45933a306" target="_blank" rel="noopener noreferrer" class="social-link linkedin">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://www.instagram.com/krish_mishra_7" target="_blank" rel="noopener noreferrer" class="social-link instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Krish Mishra. Crafted with passion and precision.</p>
+                <div class="footer-quote">
+                    "Discipline isn't a title, it's my way of life."
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
