@@ -1,0 +1,11 @@
+{
+  "name": "krish-portfolio-utils",
+  "version": "1.0.0",
+  "description": "Utilities for the Krish portfolio (image optimization)",
+  "scripts": {
+    "optimize-images": "node scripts/optimize-images.js"
+  },
+  "dependencies": {
+    "sharp": "^0.32.0"
+  }
+}
