@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | Krish Kumar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/skills.css">
+</head>
+<body data-page="skills">
+    <!-- GRID BACKGROUND - UNIQUE TO SKILLS PAGE -->
+    <div class="grid-bg">
+        <div class="grid-pattern"></div>
+        <div class="grid-glow"></div>
+    </div>
+
+    <!-- FLOATING 3D SPHERES -->
+    <div class="floating-spheres">
+        <div class="sphere sphere-1"></div>
+        <div class="sphere sphere-2"></div>
+        <div class="sphere sphere-3"></div>
+        <div class="sphere sphere-4"></div>
+    </div>
+
+    <!-- LIQUID CURSOR -->
+    <div id="cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-circle"></div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="nav">
+        <div class="nav-logo">
+            <span class="logo-k">K.</span>
+        </div>
+        <div class="nav-links">
+            <a href="home.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="skills.html" class="nav-link active">Skills</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+        <a href="contact.html" class="nav-contact">
+            <span>Let's Talk</span>
+            <div class="nav-contact-arrow">→</div>
+        </a>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="skills-page">
+        <!-- HERO -->
+        <section class="skills-hero">
+            <div class="container">
+                <div class="section-tag">
+                    <span class="tag-line"></span>
+                    <span>Skills & Expertise</span>
+                </div>
+                <h1 class="page-title">
+                    <span class="title-line">Technologies I</span>
+                    <span class="title-line gradient-text">Master</span>
+                </h1>
+                <p class="page-subtitle">
+                    A collection of tools and technologies I use to bring ideas to life
+                </p>
+            </div>
+        </section>
+
+        <!-- SKILLS ORBIT / 3D SPHERE SECTION -->
+        <section class="skills-orbit-section">
+            <div class="container">
+                <div class="orbit-container">
+                    <div class="orbit-center">
+                        <div class="center-glow"></div>
+                        <span class="center-text">Full Stack</span>
+                    </div>
+                    <div class="orbit orbit-1">
+                        <div class="orbit-item" style="--i: 0">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                        </div>
+                        <div class="orbit-item" style="--i: 1">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                        </div>
+                        <div class="orbit-item" style="--i: 2">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                        </div>
+                        <div class="orbit-item" style="--i: 3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                        </div>
+                    </div>
+                    <div class="orbit orbit-2">
+                        <div class="orbit-item" style="--i: 0">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                        </div>
+                        <div class="orbit-item" style="--i: 1">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+                        </div>
+                        <div class="orbit-item" style="--i: 2">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+                        </div>
+                        <div class="orbit-item" style="--i: 3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+                        </div>
+                        <div class="orbit-item" style="--i: 4">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS CARDS SECTION -->
+        <section class="skills-cards-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Technical Expertise</h2>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Frontend -->
+                    <div class="skill-card glow-card" data-glow-color="61, 90, 254">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <div class="card-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                        <line x1="8" y1="21" x2="16" y2="21"/>
+                                        <line x1="12" y1="17" x2="12" y2="21"/>
+                                    </svg>
+                                </div>
+                                <h3 class="card-title">Frontend</h3>
+                            </div>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Html</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">Tailwind CSS</span>
+                                <span class="skill-tag">Framer Motion</span>
+                                <span class="skill-tag">React</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar-label">
+                                    <span>Proficiency</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-bar-fill" data-width="95"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="skill-card glow-card" data-glow-color="168, 85, 247">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <div class="card-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                                    </svg>
+                                </div>
+                                <h3 class="card-title">Backend</h3>
+                            </div>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">Express</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">FastAPI</span>
+                                <span class="skill-tag">GraphQL</span>
+                                <span class="skill-tag">REST APIs</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar-label">
+                                    <span>Proficiency</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-bar-fill" data-width="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Database -->
+                    <div class="skill-card glow-card" data-glow-color="6, 182, 212">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <div class="card-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                        <path d="M2 17l10 5 10-5"/>
+                                        <path d="M2 12l10 5 10-5"/>
+                                    </svg>
+                                </div>
+                                <h3 class="card-title">Database</h3>
+                            </div>
+                            <div class="skill-tags">
+                                <span class="skill-tag">MongoDB</span>
+                                <span class="skill-tag">PostgreSQL</span>
+                                <span class="skill-tag">MySQL</span>
+    
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar-label">
+                                    <span>Proficiency</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-bar-fill" data-width="88"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DevOps -->
+                   
+                    <!-- Design -->
+                    <div class="skill-card glow-card" data-glow-color="34, 197, 94">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <div class="card-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M12 19l7-7 3 3-7 7-3-3z"/>
+                                        <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+                                        <path d="M2 2l7.586 7.586"/>
+                                        <circle cx="11" cy="11" r="2"/>
+                                    </svg>
+                                </div>
+                                <h3 class="card-title">Design</h3>
+                            </div>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Figma</span>
+                                <span class="skill-tag">UI/UX</span>
+                                <span class="skill-tag">Canva</span>
+                                <span class="skill-tag">Animation</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar-label">
+                                    <span>Proficiency</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-bar-fill" data-width="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skill-card glow-card" data-glow-color="251, 146, 60">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <div class="card-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="card-title">Tools</h3>
+                            </div>
+                            <div class="skill-tags">
+                                <span class="skill-tag">VS Code</span>
+                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">GitHub</span>
+                                <span class="skill-tag">Netlify</span>
+                                <span class="skill-tag">Vercel</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar-label">
+                                    <span>Proficiency</span>
+                                    <span>92%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-bar-fill" data-width="92"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TECH STACK MARQUEE -->
+        <section class="tech-marquee-section">
+            <div class="marquee-container">
+                <div class="marquee-row">
+                    <div class="marquee-content">
+                        <span class="tech-item">React</span>
+                        <span class="tech-dot">•</span>
+                        <span class="tech-item">Next.js</span>
+                        <span class="tech-dot">•</span>
+                        <span class="tech-item">TypeScript</span>
+                        <span class="tech-dot">•</span>
+                        <span class="tech-item">Node.js</span>
+                        <span class="tech-dot">•</span>
+                        <span class="tech-item">Python</span>
+                        <span class="tech-dot">•</span>
+                        <span class="tech-item">MongoDB</span>
+                        <span class="tech-dot">•</span>
+                        <span class="tech-item">PostgreSQL</span>
+                        <span class="tech-dot">•</span>
+                        <span class="tech-item">Docker</span>
+                        <span class="tech-dot">•</span>
+                    </div>
+                    <div class="marquee-content" aria-hidden="true">
+                        <span class="tech-item">React</span>
+                        <span class="tech-dot">•</span>
+                        <span class="tech-item">Next.js</span>
+                        <span class="tech-dot">•</span>
+                        <span class="tech-item">TypeScript</span>
+                        <span class="tech-dot">•</span>
+                        <span class="tech-item">Node.js</span>
+                        <span class="tech-dot">•</span>
+                        <span class="tech-item">Python</span>
+                        <span class="tech-dot">•</span>
+                        <span class="tech-item">MongoDB</span>
+                        <span class="tech-dot">•</span>
+                        <span class="tech-item">PostgreSQL</span>
+                        <span class="tech-dot">•</span>
+                        <span class="tech-item">Docker</span>
+                        <span class="tech-dot">•</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Krish Kumar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/skills.js"></script>
+</body>
+</html>

@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Krish Mishra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/about.css">
+</head>
+<body>
+    <!-- CUSTOM CURSOR -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+    <div class="cursor-aura" id="cursor-aura"></div>
+
+    <!-- TRANSITION GRADIENT (Blend between pages) -->
+    <div class="page-gradient">
+        <div class="gradient-white"></div>
+        <div class="gradient-color"></div>
+    </div>
+
+    <!-- FLOATING PARTICLES (Mix of white and colored) -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- NAVIGATION -->
+    <nav class="nav">
+        <div class="nav-logo">
+            <span class="logo-k">K.</span>
+        </div>
+        <div class="nav-links">
+            <a href="home.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link active">About</a>
+            <a href="skills.html" class="nav-link">Skills</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+        <a href="contact.html" class="nav-contact">
+            <span>Let's Talk</span>
+            <div class="nav-contact-arrow">→</div>
+        </a>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content" data-scroll-container>
+        
+        <!-- HERO SECTION -->
+        <section class="hero-section" data-scroll-section>
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>Get to know me</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">
+                        <span class="title-word">About</span>
+                    </span>
+                    <span class="title-line">
+                        <span class="title-word gradient-text">Krish Mishra</span>
+                    </span>
+                </h1>
+                <p class="hero-subtitle">
+                    A passionate developer crafting digital experiences
+                </p>
+            </div>
+            
+            <!-- Scroll indicator -->
+            <div class="scroll-indicator">
+                <div class="scroll-line"></div>
+                <span>Scroll</span>
+            </div>
+        </section>
+
+        <!-- INTRO SECTION - Split Layout -->
+        <section class="intro-section" data-scroll-section>
+            <div class="intro-grid">
+                <div class="intro-image" data-scroll data-scroll-speed="-1">
+                    <div class="image-frame">
+                        <div class="frame-corner top-left"></div>
+                        <div class="frame-corner top-right"></div>
+                        <div class="frame-corner bottom-left"></div>
+                        <div class="frame-corner bottom-right"></div>
+                        <img src="IMG-20250828-WA0007.jpg" alt="Krish Mishra">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="image-decoration">
+                        <div class="deco-circle"></div>
+                        <div class="deco-lines">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="intro-content" data-scroll data-scroll-speed="1">
+                    <h2 class="section-label">
+                        <span class="label-line"></span>
+                        Introduction
+                    </h2>
+                    <h3 class="intro-heading">
+                        Hello! I'm <span class="highlight">Krish</span>,<br>
+                        an Aspiring Developer
+                    </h3>
+                    <p class="intro-text">
+                        I'm a B.Tech student passionate about creating beautiful, functional, and user-centered digital experiences. With a strong foundation in both frontend and backend technologies, I bring ideas to life through clean code and creative problem-solving.
+                    </p>
+                    <p class="intro-text">
+                        My journey in tech started with curiosity and has evolved into a deep passion for building applications that make a difference. I believe in continuous learning and pushing the boundaries of what's possible.
+                    </p>
+                    
+                    <div class="intro-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="10">0</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="5">0</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="2">0</span>
+                            <span class="stat-label">Years Coding</span>
+                        </div>
+                    </div>
+                       <div class="hero-buttons">
+                        <button class="btn btn-outline" id="openGalleryBtn">
+                            <span>View Gallery</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="14" width="7" height="7"></rect>
+                                <rect x="3" y="14" width="7" height="7"></rect>
+                            </svg>
+                        </button>
+                        <a href="assets/resume.pdf" class="btn btn-primary" download>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                            </svg>
+                            <span>Download Resume</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- UNIQUE TIMELINE - Stacked Cards Fan Out -->
+        <section class="timeline-section" data-scroll-section>
+            <div class="timeline-header">
+                <h2 class="section-label">
+                    <span class="label-line"></span>
+                    My Journey
+                </h2>
+                <h3 class="timeline-heading">The Path So Far</h3>
+            </div>
+            
+           <div class="stack-container" id="stack-container">
+    
+    <div class="stack-card" data-index="0">
+        <div class="stack-card-inner">
+            <div class="card-accent"></div>
+            <div class="card-header">
+                <span class="card-year">2020</span>
+                <span class="card-badge">Beginning</span>
+            </div>
+            <h4 class="card-title">Curiosity & School Leadership</h4>
+            <p class="card-desc">Developed interest in technology and communication. Started building discipline and leadership skills in school.</p>
+            <div class="card-number">01</div>
+        </div>
+    </div>
+
+    <div class="stack-card" data-index="1">
+        <div class="stack-card-inner">
+            <div class="card-accent"></div>
+            <div class="card-header">
+                <span class="card-year">2021</span>
+                <span class="card-badge">Discovery</span>
+            </div>
+            <h4 class="card-title">First Coding Exposure</h4>
+            <p class="card-desc">Got introduced to programming basics and coding logic through online resources. First step into the tech world.</p>
+            <div class="card-number">02</div>
+        </div>
+    </div>
+
+    <div class="stack-card" data-index="2">
+        <div class="stack-card-inner">
+            <div class="card-accent"></div>
+            <div class="card-header">
+                <span class="card-year">2022–23</span>
+                <span class="card-badge">Foundation</span>
+            </div>
+            <h4 class="card-title">Discipline Incharge (School)</h4>
+            <p class="card-desc">Led discipline management in Class 11 & 12; improved leadership, communication, and responsibility skills.</p>
+            <div class="card-number">03</div>
+        </div>
+    </div>
+
+    <div class="stack-card" data-index="3">
+        <div class="stack-card-inner">
+            <div class="card-accent"></div>
+            <div class="card-header">
+                <span class="card-year">2024</span>
+                <span class="card-badge">Campus Journey</span>
+            </div>
+            <h4 class="card-title">Committees & College Involvement</h4>
+            <p class="card-desc">Joined Discipline Committee & Events Core Committee at UPES. Helped manage events and support campus culture.</p>
+            <div class="card-number">04</div>
+        </div>
+    </div>
+
+    <div class="stack-card" data-index="4">
+        <div class="stack-card-inner">
+            <div class="card-accent"></div>
+            <div class="card-header">
+                <span class="card-year">2024–Present</span>
+                <span class="card-badge">Growth</span>
+            </div>
+            <h4 class="card-title">PR Head & HackerRank Ambassador</h4>
+            <p class="card-desc">Leading ACM-W sponsorships & outreach. Promoting coding culture as HackerRank Campus Ambassador and hosting Hacker Hustle.</p>
+            <div class="card-number">05</div>
+        </div>
+    </div>
+
+    <div class="stack-card featured" data-index="5">
+        <div class="stack-card-inner">
+            <div class="card-accent"></div>
+            <div class="card-header">
+                <span class="card-year">2025</span>
+                <span class="card-badge special">Next Chapter</span>
+            </div>
+            <h4 class="card-title">Developer Journey (In Progress)</h4>
+            <p class="card-desc">Learning Web Development & DSA. Building portfolio projects, organizing events, and preparing for internships and future goals.</p>
+            <div class="card-number">06</div>
+        </div>
+    </div>
+
+</div>
+
+            
+            <div class="stack-hint">
+                <span>Scroll to explore</span>
+                <div class="hint-arrow">↓</div>
+            </div>
+        </section>
+
+        <!-- WHAT I DO - Morphing Cards -->
+        <section class="services-section" data-scroll-section>
+            <div class="services-header">
+                <h2 class="section-label">
+                    <span class="label-line"></span>
+                    What I Do
+                </h2>
+                <h3 class="services-heading">My Expertise</h3>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-scroll data-scroll-speed="0.5">
+                    <div class="card-border"></div>
+                    <div class="card-bg"></div>
+                    <div class="card-icon-wrap">
+                        <div class="icon-glow"></div>
+                        <span class="card-icon">🎨</span>
+                    </div>
+                    <h4 class="card-title">Frontend Development</h4>
+                    <p class="card-text">Creating responsive, interactive, and visually stunning user interfaces with modern frameworks and animations.</p>
+                    <div class="card-tech">
+                        <span>Html</span>
+                        <span>Tailwind</span>
+                        <span>JS</span>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-scroll data-scroll-speed="1">
+                    <div class="card-border"></div>
+                    <div class="card-bg"></div>
+                    <div class="card-icon-wrap">
+                        <div class="icon-glow"></div>
+                        <span class="card-icon">⚙️</span>
+                    </div>
+                    <h4 class="card-title">Backend Development</h4>
+                    <p class="card-text">Building robust APIs, managing databases, and creating scalable server-side solutions.</p>
+                    <div class="card-tech">
+                
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>APIs</span>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-scroll data-scroll-speed="0.5">
+                    <div class="card-border"></div>
+                    <div class="card-bg"></div>
+                    <div class="card-icon-wrap">
+                        <div class="icon-glow"></div>
+                        <span class="card-icon">📱</span>
+                    </div>
+                    <h4 class="card-title">Communication & UI/UX</h4>
+                    <p class="card-text">Leveraging communication and leadership as ACM-W PR Head and HackerRank Ambassador, while exploring UI/UX to create clear, user-focused digital experiences.</p>
+                    <div class="card-tech">
+                         <span>HackerRank Ambassador</span>
+                        <span>Public Relations</span>
+                        <span>Sponsorships</span>
+                       
+                        <span>Canva</span>
+                        <span>Figma (learning) </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BEYOND CODE - Marquee Scroll -->
+        <section class="interests-section" data-scroll-section>
+            <!-- Floating Particles -->
+            <div class="marquee-particles">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+            
+            <div class="interests-header">
+                <h2 class="section-label">
+                    <span class="label-line"></span>
+                    Beyond Code
+                </h2>
+                <h3 class="interests-heading">When I'm Not Coding</h3>
+            </div>
+            
+            <div class="marquee-container">
+                <!-- First Row - Left to Right -->
+                <div class="marquee-row">
+                    <div class="marquee-track marquee-left">
+                        <div class="marquee-item">
+                            <span class="marquee-icon">🎮</span>
+                            <span class="marquee-text">Gaming</span>
+                        </div>
+                        <div class="marquee-item">
+                            <span class="marquee-icon">🎵</span>
+                            <span class="marquee-text">Music</span>
+                        </div>
+                        <div class="marquee-item">
+                            <span class="marquee-icon">☕</span>
+                            <span class="marquee-text">Coffee</span>
+                        </div>
+                        <div class="marquee-item">
+                            <span class="marquee-icon">📚</span>
+                            <span class="marquee-text">Reading</span>
+                        </div>
+                        <div class="marquee-item">
+                            <span class="marquee-icon">🎬</span>
+                            <span class="marquee-text">Movies</span>
+                        </div>
+                        <div class="marquee-item">
+                            <span class="marquee-icon">🌙</span>
+                            <span class="marquee-text">Night Owl</span>
+                        </div>
+                        <div class="marquee-item">
+                            <span class="marquee-icon">✈️</span>
+                            <span class="marquee-text">Travel</span>
+                        </div>
+                        <div class="marquee-item">
+                            <span class="marquee-icon">🏃</span>
+                            <span class="marquee-text">Fitness</span>
+                        </div>
+                        <!-- Duplicate for seamless loop -->
+                        <div class="marquee-item">
+                            <span class="marquee-icon">🎮</span>
+                            <span class="marquee-text">Gaming</span>
+                        </div>
+                        <div class="marquee-item">
+                            <span class="marquee-icon">🎵</span>
+                            <span class="marquee-text">Music</span>
+                        </div>
+                        <div class="marquee-item">
+                            <span class="marquee-icon">☕</span>
+                            <span class="marquee-text">Coffee</span>
+                        </div>
+                        <div class="marquee-item">
+                            <span class="marquee-icon">📚</span>
+                            <span class="marquee-text">Reading</span>
+                        </div>
+                        <div class="marquee-item">
+                            <span class="marquee-icon">🎬</span>
+                            <span class="marquee-text">Movies</span>
+                        </div>
+                        <div class="marquee-item">
+                            <span class="marquee-icon">🌙</span>
+                            <span class="marquee-text">Night Owl</span>
+                        </div>
+                        <div class="marquee-item">
+                            <span class="marquee-icon">✈️</span>
+                            <span class="marquee-text">Travel</span>
+                        </div>
+                        <div class="marquee-item">
+                            <span class="marquee-icon">🏃</span>
+                            <span class="marquee-text">Fitness</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Second Row - Right to Left -->
+                <div class="marquee-row">
+                    <div class="marquee-track marquee-right">
+                        <div class="marquee-item alt">
+                            <span class="marquee-icon">💡</span>
+                            <span class="marquee-text">Ideas</span>
+                        </div>
+                        <div class="marquee-item alt">
+                            <span class="marquee-icon">🎨</span>
+                            <span class="marquee-text">Design</span>
+                        </div>
+                        <div class="marquee-item alt">
+                            <span class="marquee-icon">🎧</span>
+                            <span class="marquee-text">Podcasts</span>
+                        </div>
+                        <div class="marquee-item alt">
+                            <span class="marquee-icon">🍕</span>
+                            <span class="marquee-text">Food</span>
+                        </div>
+                        <div class="marquee-item alt">
+                            <span class="marquee-icon">🌅</span>
+                            <span class="marquee-text">Sunsets</span>
+                        </div>
+                        <div class="marquee-item alt">
+                            <span class="marquee-icon">🎯</span>
+                            <span class="marquee-text">Goals</span>
+                        </div>
+                        <div class="marquee-item alt">
+                            <span class="marquee-icon">🧠</span>
+                            <span class="marquee-text">Learning</span>
+                        </div>
+                        <div class="marquee-item alt">
+                            <span class="marquee-icon">🎸</span>
+                            <span class="marquee-text">Music</span>
+                        </div>
+                        <!-- Duplicate for seamless loop -->
+                        <div class="marquee-item alt">
+                            <span class="marquee-icon">💡</span>
+                            <span class="marquee-text">Ideas</span>
+                        </div>
+                        <div class="marquee-item alt">
+                            <span class="marquee-icon">🎨</span>
+                            <span class="marquee-text">Design</span>
+                        </div>
+                        <div class="marquee-item alt">
+                            <span class="marquee-icon">🎧</span>
+                            <span class="marquee-text">Podcasts</span>
+                        </div>
+                        <div class="marquee-item alt">
+                            <span class="marquee-icon">🍕</span>
+                            <span class="marquee-text">Food</span>
+                        </div>
+                        <div class="marquee-item alt">
+                            <span class="marquee-icon">🌅</span>
+                            <span class="marquee-text">Sunsets</span>
+                        </div>
+                        <div class="marquee-item alt">
+                            <span class="marquee-icon">🎯</span>
+                            <span class="marquee-text">Goals</span>
+                        </div>
+                        <div class="marquee-item alt">
+                            <span class="marquee-icon">🧠</span>
+                            <span class="marquee-text">Learning</span>
+                        </div>
+                        <div class="marquee-item alt">
+                            <span class="marquee-icon">🎸</span>
+                            <span class="marquee-text">Music</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section class="cta-section" data-scroll-section>
+            <div class="cta-content">
+                <h2 class="cta-title" data-scroll data-scroll-speed="1">
+                    Let's Create<br>
+                    <span class="gradient-text">Something Amazing</span>
+                </h2>
+                <p class="cta-text" data-scroll data-scroll-speed="0.5">
+                    I'm always excited to work on new projects and collaborate with creative minds.
+                </p>
+                <div class="cta-buttons">
+                    <a href="projects.html" class="cta-btn primary">
+                        <span>View Projects</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="contact.html" class="cta-btn secondary">
+                        <span>Contact Me</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="cta-decoration">
+                <div class="deco-orb orb-1"></div>
+                <div class="deco-orb orb-2"></div>
+                <div class="deco-grid"></div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer" data-scroll-section>
+            <div class="footer-content">
+                <p>© 2025 Krish Mishra. Crafted with passion.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/krishmishra" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com/in/krishmishra" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- DOME GALLERY MODAL -->
+    <div class="dome-gallery-modal" id="domeGalleryModal">
+        
+        <!-- INTRO SCREEN - Minimal & Clean -->
+        <div class="gallery-intro" id="galleryIntro">
+            <div class="intro-content">
+                <div class="intro-line-top"></div>
+                <p class="intro-label">Gallery</p>
+                <h1 class="intro-title">My World</h1>
+                <p class="intro-desc">A glimpse into my journey</p>
+                <div class="intro-line-bottom"></div>
+                <div class="intro-progress">
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Animated Starfield Background -->
+        <canvas id="starsCanvas" class="stars-canvas"></canvas>
+        
+        <!-- Glowing Orbs -->
+        <div class="floating-orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+        </div>
+        
+        <button class="dome-close-btn" id="closeDomeGallery">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 6L6 18M6 6l12 12"/>
+            </svg>
+        </button>
+        
+        <!-- Energy Rings -->
+        <div class="energy-rings">
+            <div class="ring ring-1"></div>
+            <div class="ring ring-2"></div>
+            <div class="ring ring-3"></div>
+        </div>
+        
+        <div class="sphere-root" id="sphereRoot">
+            <main class="sphere-main" id="sphereMain">
+                <div class="stage">
+                    <div class="sphere" id="sphere"></div>
+                </div>
+                <div class="overlay"></div>
+                <div class="overlay overlay--blur"></div>
+                <div class="edge-fade edge-fade--top"></div>
+                <div class="edge-fade edge-fade--bottom"></div>
+            </main>
+            <div class="viewer" id="viewer">
+                <div class="scrim" id="scrim"></div>
+                <div class="frame" id="frame">
+                    <div class="frame-glow"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="dome-hint">
+            <span class="hint-icon">✨</span>
+            <span>Drag to explore • Click to reveal</span>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/about.js"></script>
+</body>
+</html>

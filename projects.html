@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Krish Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/projects.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div id="cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-circle"></div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="nav">
+        <div class="nav-logo">
+            <span class="logo-k">K.</span>
+        </div>
+        <div class="nav-links">
+            <a href="home.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="skills.html" class="nav-link">Skills</a>
+            <a href="projects.html" class="nav-link active">Projects</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+        <a href="contact.html" class="nav-contact">
+            <span>Let's Talk</span>
+            <div class="nav-contact-arrow">→</div>
+        </a>
+    </nav>
+
+    <!-- Animated Grid Background -->
+    <div class="grid-bg">
+        <div class="grid-pattern"></div>
+        <div class="grid-glow"></div>
+        <div class="grid-lines">
+            <div class="h-line"></div>
+            <div class="h-line"></div>
+            <div class="h-line"></div>
+            <div class="v-line"></div>
+            <div class="v-line"></div>
+            <div class="v-line"></div>
+        </div>
+    </div>
+
+    <!-- Floating 3D Spheres -->
+    <div class="floating-spheres">
+        <div class="sphere sphere-1"></div>
+        <div class="sphere sphere-2"></div>
+        <div class="sphere sphere-3"></div>
+        <div class="sphere sphere-4"></div>
+    </div>
+
+    <!-- Orbiting Particles -->
+    <div class="orbit-container">
+        <div class="orbit orbit-1">
+            <div class="orbit-particle"></div>
+        </div>
+        <div class="orbit orbit-2">
+            <div class="orbit-particle"></div>
+        </div>
+        <div class="orbit orbit-3">
+            <div class="orbit-particle"></div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="projects-main">
+        <!-- Hero Section -->
+        <section class="projects-hero">
+            <div class="hero-tag">
+                <div class="tag-line"></div>
+                <span>FEATURED WORK</span>
+                <div class="tag-line"></div>
+            </div>
+            <h1 class="hero-title">
+                <div class="title-wrapper">
+                    <span class="title-line">
+                        <span class="word" data-text="My">My</span>
+                        <span class="word gradient" data-text="Creative">Creative</span>
+                    </span>
+                    <span class="title-line">
+                        <span class="word gradient" data-text="Projects">Projects</span>
+                        <span class="word floating-emoji">🚀</span>
+                    </span>
+                </div>
+            </h1>
+            <p class="hero-sub">Hover, explore, and dive into my work</p>
+            
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span>Scroll to explore</span>
+            </div>
+        </section>
+
+        <!-- Projects Gallery -->
+        <section class="projects-gallery">
+            <!-- Project 1:-->
+            <article class="project-card featured" data-index="01">
+                <div class="card-bg">
+                    <div class="bg-gradient"></div>
+                    <div class="bg-noise"></div>
+                    <div class="bg-glow"></div>
+                </div>
+                <div class="card-border"></div>
+                <div class="card-content">
+                    <div class="card-left">
+                        <div class="project-visual" data-color="blue">
+                            <div class="visual-orb"></div>
+                            <div class="visual-rings">
+                                <div class="ring ring-1"></div>
+                                <div class="ring ring-2"></div>
+                                <div class="ring ring-3"></div>
+                            </div>
+                            <div class="visual-icon"><span>🛒</span></div>
+                            <div class="visual-particles"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                        </div>
+                    </div>
+                    <div class="card-right">
+                        <div class="project-meta">
+                            <span class="meta-type">Food ordering Platform</span>
+                            <span class="meta-dot">•</span>
+                            <span class="meta-year">2025</span>
+                        </div>
+                        <h2 class="project-title"><span class="title-text">Fresh Tray</span><span class="title-underline"></span></h2>
+                        <p class="project-desc">Mobile food van website serving healthy meals with online ordering, location tracking, and responsive design.</p>
+                        <div class="project-tech">
+                            <span class="tech-pill">HTML</span><span class="tech-pill">CSS</span><span class="tech-pill">JS</span><span class="tech-pill">EMAIL JS</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://freshtray-mges.vercel.app/" class="action-btn primary" target="_blank" rel="noopener">
+                                <span>View Live</span>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                            </a>
+                            <a href="https://github.com/kri297/NGO_WEBSITE" class="action-btn secondary" target="_blank" rel="noopener">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-number">01</div>
+                <div class="card-shine"></div>
+            </article>
+            <!-- Project 2: Portfolio of Krish -->
+            <article class="project-card" data-index="02">
+                <div class="card-bg"><div class="bg-gradient"></div><div class="bg-noise"></div><div class="bg-glow"></div></div>
+                <div class="card-border"></div>
+                <div class="card-content">
+                    <div class="card-left">
+                        <div class="project-visual" data-color="purple"><div class="visual-orb"></div><div class="visual-rings"><div class="ring ring-1"></div><div class="ring ring-2"></div><div class="ring ring-3"></div></div><div class="visual-icon"><span>🌐</span></div><div class="visual-particles"><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
+                    </div>
+                    <div class="card-right">
+                        <div class="project-meta"><span class="meta-type">Personal Portfolio</span><span class="meta-dot">•</span><span class="meta-year">2025</span></div>
+                        <h2 class="project-title"><span class="title-text">Portfolio of Krish</span><span class="title-underline"></span></h2>
+                        <p class="project-desc">My interactive, ultra-premium portfolio site. Features animated backgrounds, 3D effects, and a modern, accessible UI.</p>
+                        <div class="project-tech"><span class="tech-pill">HTML</span><span class="tech-pill">CSS</span><span class="tech-pill">JavaScript</span></div>
+                        <div class="project-actions">
+                            <a href="https://portfolioofkrish.vercel.app/" class="action-btn primary" target="_blank" rel="noopener"><span>View Live</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></a>
+                            <a href="https://github.com/kri297/Krish-portfolio" class="action-btn secondary" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-number">02</div><div class="card-shine"></div>
+            </article>
+            <!-- Project 3-->
+            <article class="project-card" data-index="03">
+                <div class="card-bg"><div class="bg-gradient"></div><div class="bg-noise"></div><div class="bg-glow"></div></div>
+                <div class="card-border"></div>
+                <div class="card-content">
+                    <div class="card-left">
+                        <div class="project-visual" data-color="cyan"><div class="visual-orb"></div><div class="visual-rings"><div class="ring ring-1"></div><div class="ring ring-2"></div><div class="ring ring-3"></div></div><div class="visual-icon"><span>🤝</span></div><div class="visual-particles"><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
+                    </div>
+                    <div class="card-right">
+                        <div class="project-meta"><span class="meta-type">Learning platform</span><span class="meta-dot">•</span><span class="meta-year">2024</span></div>
+                        <h2 class="project-title"><span class="title-text">DBMS Learning Platform</span><span class="title-underline"></span></h2>
+                        <p class="project-desc">Interactive learning platform with 4 modules: ER Diagram Builder, Relational Algebra Visualizer, and Transaction Simulator.</p>
+                        <div class="project-tech"><span class="tech-pill">HTML</span><span class="tech-pill">CSS</span><span class="tech-pill">JS</span></div>
+                        <div class="project-actions">
+                            <a href="https://dbms-project1.vercel.app/" class="action-btn primary" target="_blank" rel="noopener"><span>View Live</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></a>
+                            <a href="https://github.com/kri297/DBMS-PROJECT" class="action-btn secondary" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-number">03</div><div class="card-shine"></div>
+            </article>
+            <!-- Project 4: AlgoViz -->
+            <article class="project-card" data-index="04">
+                <div class="card-bg"><div class="bg-gradient"></div><div class="bg-noise"></div><div class="bg-glow"></div></div>
+                <div class="card-border"></div>
+                <div class="card-content">
+                    <div class="card-left">
+                        <div class="project-visual" data-color="green"><div class="visual-orb"></div><div class="visual-rings"><div class="ring ring-1"></div><div class="ring ring-2"></div><div class="ring ring-3"></div></div><div class="visual-icon"><span>📊</span></div><div class="visual-particles"><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
+                    </div>
+                    <div class="card-right">
+                        <div class="project-meta"><span class="meta-type">Classifier</span><span class="meta-dot">•</span><span class="meta-year">2024</span></div>
+                        <h2 class="project-title"><span class="title-text">Task Manager</span><span class="title-underline"></span></h2>
+                        <p class="project-desc">Terminal-based Python app with task scheduling, productivity analysis, auto-save, and matplotlib visualizations.</p>
+                        <div class="project-tech"><span class="tech-pill">Python</span><span class="tech-pill">Matplotlib</span><span class="tech-pill">Pickle</span></div>
+                        <div class="project-actions">
+                            <a href="https://github.com/kri297/TaskManager/blob/main/590015053_KRISH_CODE.py" class="action-btn primary" target="_blank" rel="noopener"><span>View Live</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></a>
+                            <a href="https://github.com/kri297/TaskManager" class="action-btn secondary" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-number">04</div><div class="card-shine"></div>
+            </article>
+            <!-- Project 5: Blogify -->
+            <article class="project-card" data-index="05">
+                <div class="card-bg"><div class="bg-gradient"></div><div class="bg-noise"></div><div class="bg-glow"></div></div>
+                <div class="card-border"></div>
+                <div class="card-content">
+                    <div class="card-left">
+                        <div class="project-visual" data-color="orange"><div class="visual-orb"></div><div class="visual-rings"><div class="ring ring-1"></div><div class="ring ring-2"></div><div class="ring ring-3"></div></div><div class="visual-icon"><span>✍️</span></div><div class="visual-particles"><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
+                    </div>
+                    <div class="card-right">
+                        <div class="project-meta"><span class="meta-type">Beginner</span><span class="meta-dot">•</span><span class="meta-year">2023</span></div>
+                        <h2 class="project-title"><span class="title-text">C Programming Projects</span><span class="title-underline"></span></h2>
+                        <p class="project-desc">6 beginner-friendly C programs: Bill Splitter, Life Simulator, Password Checker, Expense Tracker, Calculator, and Unit Converter.</p>
+                        <div class="project-tech"><span class="tech-pill">C</span></div>
+                        <div class="project-actions">
+                            <a href="https://github.com/kri297/Cprojects" class="action-btn primary" target="_blank" rel="noopener"><span>View Live</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></a>
+                            <a href="https://github.com/kri297/Cprojects/tree/main/C%20projects" class="action-btn secondary" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-number">05</div><div class="card-shine"></div>
+            </article>
+            <!-- Project 6:-->
+            <article class="project-card" data-index="06">
+                <div class="card-bg"><div class="bg-gradient"></div><div class="bg-noise"></div><div class="bg-glow"></div></div>
+                <div class="card-border"></div>
+                <div class="card-content">
+                    <div class="card-left">
+                        <div class="project-visual" data-color="red"><div class="visual-orb"></div><div class="visual-rings"><div class="ring ring-1"></div><div class="ring ring-2"></div><div class="ring ring-3"></div></div><div class="visual-icon"><span>🧠</span></div><div class="visual-particles"><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
+                    </div>
+                    <div class="card-right">
+                        <div class="project-meta"><span class="meta-type">Quiz App</span><span class="meta-dot">•</span><span class="meta-year">2023</span></div>
+                        <h2 class="project-title"><span class="title-text">QuizWiz</span><span class="title-underline"></span></h2>
+                        <p class="project-desc">A gamified quiz platform with leaderboards, custom quizzes, and real-time multiplayer. Built for learning and fun.</p>
+                        <div class="project-tech"><span class="tech-pill">React</span><span class="tech-pill">Firebase</span><span class="tech-pill">Chakra UI</span></div>
+                        <div class="project-actions">
+                            <a href="https://quizwiz.app/" class="action-btn primary" target="_blank" rel="noopener"><span>View Live</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></a>
+                            <a href="https://github.com/kri297/quizwiz" class="action-btn secondary" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-number">06</div><div class="card-shine"></div>
+            </article>
+        </section>
+
+        <!-- More Projects CTA - HORIZONTAL -->
+        <section class="more-section">
+            <div class="more-card">
+                <div class="more-border"></div>
+                <div class="more-glow-1"></div>
+                
+                <div class="more-content">
+                    <!-- Left: Icon -->
+                    <div class="more-left">
+                        <div class="more-icon-wrapper">
+                            <div class="icon-ring"></div>
+                            <div class="icon-ring delay"></div>
+                            <span class="fire-icon">🔥</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Center: Text & Stats -->
+                    <div class="more-center">
+                        <h3 class="more-title">Want to see <span class="gradient-text">more?</span></h3>
+                        <div class="more-stats">
+                            <div class="stat">
+                                <span class="stat-num" data-count="20">0</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat">
+                                <span class="stat-num" data-count="500">0</span>
+                                <span class="stat-label">Commits</span>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat">
+                                <span class="stat-num" data-count="15">0</span>
+                                <span class="stat-label">Stars</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right: Button -->
+                    <div class="more-right">
+                        <a href="#" class="more-btn">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            <span>Explore GitHub</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Infinite Marquee -->
+        <section class="marquee-section">
+            <div class="marquee-track">
+                <div class="marquee-content">
+                    <span class="marquee-item">React</span>
+                    <span class="marquee-star">✦</span>
+                    <span class="marquee-item">Node.js</span>
+                    <span class="marquee-star">✦</span>
+                    <span class="marquee-item">Python</span>
+                    <span class="marquee-star">✦</span>
+                    <span class="marquee-item">TypeScript</span>
+                    <span class="marquee-star">✦</span>
+                    <span class="marquee-item">Next.js</span>
+                    <span class="marquee-star">✦</span>
+                    <span class="marquee-item">MongoDB</span>
+                    <span class="marquee-star">✦</span>
+                    <span class="marquee-item">TensorFlow</span>
+                    <span class="marquee-star">✦</span>
+                    <span class="marquee-item">Firebase</span>
+                    <span class="marquee-star">✦</span>
+                </div>
+                <div class="marquee-content" aria-hidden="true">
+                    <span class="marquee-item">React</span>
+                    <span class="marquee-star">✦</span>
+                    <span class="marquee-item">Node.js</span>
+                    <span class="marquee-star">✦</span>
+                    <span class="marquee-item">Python</span>
+                    <span class="marquee-star">✦</span>
+                    <span class="marquee-item">TypeScript</span>
+                    <span class="marquee-star">✦</span>
+                    <span class="marquee-item">Next.js</span>
+                    <span class="marquee-star">✦</span>
+                    <span class="marquee-item">MongoDB</span>
+                    <span class="marquee-star">✦</span>
+                    <span class="marquee-item">TensorFlow</span>
+                    <span class="marquee-star">✦</span>
+                    <span class="marquee-item">Firebase</span>
+                    <span class="marquee-star">✦</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/projects.js"></script>
+</body>
+</html>

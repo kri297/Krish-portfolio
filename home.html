@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRISH Mishra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/home.css">
+</head>
+<body>
+    <!-- PRELOADER -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <!-- Main text with wavy fill effect -->
+            <div class="preloader-name">
+                <div class="name-row">
+                    <span class="fill-letter" data-letter="K">K</span>
+                    <span class="fill-letter" data-letter="R">R</span>
+                    <span class="fill-letter" data-letter="I">I</span>
+                    <span class="fill-letter" data-letter="S">S</span>
+                    <span class="fill-letter" data-letter="H">H</span>
+                </div>
+            </div>
+            
+            <!-- Wavy water effect -->
+            <div class="wave-container" id="wave-container">
+                <svg class="wave-svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                    <path class="wave wave-1" d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                    <path class="wave wave-2" d="M0,256L48,240C96,224,192,192,288,181.3C384,171,480,181,576,186.7C672,192,768,192,864,213.3C960,235,1056,277,1152,277.3C1248,277,1344,235,1392,213.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- CURSOR TRAIL -->
+    <canvas id="cursor-trail"></canvas>
+
+    <!-- SCROLL PROGRESS -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- NOISE TEXTURE -->
+    <div class="noise-overlay"></div>
+
+    <!-- CLICK SPLASH EFFECT -->
+    <div class="splash-container" id="splash-container"></div>
+
+    <!-- CURSOR -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- FLOATING SHAPES -->
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
+
+    <!-- MAIN SCROLL CONTAINER -->
+    <div data-scroll-container id="scroll-container">
+        
+        <!-- HERO SECTION -->
+        <section class="hero" data-scroll-section>
+            <!-- VIDEO/IMAGE BACKGROUND -->
+            <div class="hero-bg">
+                <div class="hero-overlay"></div>
+                <div class="hero-gradient"></div>
+            </div>
+
+            <!-- NAVIGATION -->
+            <nav class="nav">
+                <div class="nav-logo" data-scroll data-scroll-speed="1">
+                    <span class="logo-k">K.</span>
+                </div>
+                <div class="nav-links">
+                    <a href="home.html" class="nav-link active">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="skills.html" class="nav-link">Skills</a>
+                    <a href="projects.html" class="nav-link">Projects</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <a href="contact.html" class="nav-contact">
+                    <span>Let's Talk</span>
+                    <div class="nav-contact-arrow">→</div>
+                </a>
+            </nav>
+
+            <!-- HERO CONTENT -->
+            <div class="hero-content">
+                <!-- LEFT SIDE - IMAGE -->
+                <div class="hero-image-container" data-scroll data-scroll-speed="-2">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image-mask">
+                            <img src="IMG20251106090239.jpg" alt="Krish Mishra" class="hero-image">
+                        </div>
+                        <div class="hero-image-border"></div>
+                        <div class="hero-image-label">
+                            <span class="label-dot"></span>
+                            <span>Available for Projects</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT SIDE - TEXT -->
+                <div class="hero-text" data-scroll data-scroll-speed="1">
+                    <div class="hero-greeting">
+                        <span id="greeting">Hello there</span> 👋
+                    </div>
+                    <div class="hero-intro">
+                        <span class="intro-line"></span>
+                        <span class="intro-text">I'm a <span class="typed-text" id="typed-text"></span><span class="typed-cursor">|</span></span>
+                    </div>
+                    
+                    <h1 class="hero-name">
+                        <div class="name-line" data-scroll data-scroll-speed="0.5">
+                            <span class="word">KRISH</span>
+                        </div>
+                        <div class="name-line" data-scroll data-scroll-speed="0.8">
+                            <span class="word outline">Mishra</span>
+                        </div>
+                    </h1>
+
+                    <p class="hero-desc" data-scroll data-scroll-speed="0.3">
+                        I design and build digital experiences that 
+                        <br><strong>stand out</strong> and <strong>make an impact.</strong>
+                    </p>
+
+                    <div class="skill-badges">
+                        <span class="skill-badge">React</span>
+                        <span class="skill-badge">Node.js</span>
+                        <span class="skill-badge">UI/UX</span>
+                        <span class="skill-badge">Python</span>
+                    </div>
+
+                    <div class="hero-cta" data-scroll data-scroll-speed="0.2">
+                        <a href="projects.html" class="cta-main magnetic">
+                            <span class="cta-text">Explore Work</span>
+                            <span class="cta-icon">
+                                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BOTTOM INFO -->
+            <div class="hero-bottom">
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-num" data-count="50">00</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num" data-count="3">00</span>
+                        <span class="stat-label">Years</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num" data-count="30">00</span>
+                        <span class="stat-label">Clients</span>
+                    </div>
+                </div>
+
+                <div class="hero-scroll">
+                    <div class="scroll-line"></div>
+                    <span>Scroll</span>
+                </div>
+
+                <div class="hero-social">
+                    <a href="#">GH</a>
+                    <a href="#">LI</a>
+                    <a href="#">IG</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- MARQUEE SECTION -->
+        <section class="marquee-section" data-scroll-section>
+            <div class="marquee" data-scroll data-scroll-speed="5" data-scroll-direction="horizontal">
+                <div class="marquee-inner">
+                    <span>CREATIVE DEVELOPER</span>
+                    <span class="dot">●</span>
+                    <span>UI/UX DESIGNER</span>
+                    <span class="dot">●</span>
+                    <span>PROBLEM SOLVER</span>
+                    <span class="dot">●</span>
+                    <span>CREATIVE DEVELOPER</span>
+                    <span class="dot">●</span>
+                    <span>UI/UX DESIGNER</span>
+                    <span class="dot">●</span>
+                    <span>PROBLEM SOLVER</span>
+                    <span class="dot">●</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED SHOWCASE -->
+        <section class="showcase" data-scroll-section>
+            <div class="showcase-header">
+                <h2 class="showcase-title" data-scroll data-scroll-speed="1">
+                    <span class="title-reveal">SELECTED</span>
+                    <span class="title-reveal outline">WORKS</span>
+                </h2>
+                <p class="showcase-subtitle" data-scroll data-scroll-speed="0.5">Projects that define my journey</p>
+            </div>
+
+            <div class="showcase-grid">
+                <a href="https://freshtray-mges.vercel.app/" target="_blank" class="showcase-item" data-scroll data-scroll-speed="0.5">
+                    <div class="item-image">
+                        <div class="item-overlay">
+                            <span class="item-number">01</span>
+                            <span class="item-view">View Project →</span>
+                        </div>
+                        <img src="Screenshot 2025-12-29 131817.png" alt="FreshTray">
+                    </div>
+                    <div class="item-info">
+                        <h3>FreshTray</h3>
+                        <span>Food Delivery / Full Stack</span>
+                    </div>
+                </a>
+
+                <a href="https://dbms-project1.vercel.app/" target="_blank" class="showcase-item" data-scroll data-scroll-speed="1">
+                    <div class="item-image">
+                        <div class="item-overlay">
+                            <span class="item-number">02</span>
+                            <span class="item-view">View Project →</span>
+                        </div>
+                        <img src="Screenshot 2025-12-29 132300.png" alt="DBMS Project">
+                    </div>
+                    <div class="item-info">
+                        <h3>DBMS Project</h3>
+                        <span>Database / Web App</span>
+                    </div>
+                </a>
+
+                <a href="projects.html" class="showcase-item large" data-scroll data-scroll-speed="0.3">
+                    <div class="item-image">
+                        <div class="item-overlay">
+                            <span class="item-number">03</span>
+                            <span class="item-view">View All Projects →</span>
+                        </div>
+                        <img src="Screenshot 2025-12-31 132126.png" alt="More Projects">
+                    </div>
+                    <div class="item-info">
+                        <h3>More Projects</h3>
+                        <span>View My Complete Portfolio</span>
+                    </div>
+                </a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="projects.html" class="showcase-more magnetic">
+                <span>View All Projects</span>
+                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+        </section>
+
+        <!-- ABOUT PREVIEW -->
+        <section class="about-preview" data-scroll-section>
+            <div class="about-content">
+                <div class="about-text" data-scroll data-scroll-speed="1">
+                    <span class="about-label">About Me</span>
+                    <h2 class="about-title">
+                        I believe in creating <br>
+                        <span class="highlight">meaningful</span> experiences
+                    </h2>
+                    <p class="about-desc">
+                        With a passion for clean code and intuitive design, 
+                        I transform complex problems into elegant solutions.
+                    </p>
+                    <a href="about.html" class="about-link">
+                        <span>Learn More About Me</span>
+                        <div class="link-arrow">→</div>
+                    </a>
+                </div>
+                <div class="about-image" data-scroll data-scroll-speed="-1">
+                    <div class="image-frame">
+                        <img src="IMG-20250828-WA0007.jpg" alt="Krish Mishra">
+                    </div>
+                    <div class="image-text">
+                        <span>3+</span>
+                        <span>Years of</span>
+                        <span>Experience</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT CTA -->
+        <section class="contact-cta" data-scroll-section>
+            <div class="cta-content">
+                <h2 class="cta-title" data-scroll data-scroll-speed="0.5">
+                    <span>Let's Create</span>
+                    <span class="outline">Something</span>
+                    <span>Amazing</span>
+                </h2>
+                <a href="contact.html" class="cta-button magnetic">
+                    <span class="button-text">Get In Touch</span>
+                    <span class="button-bg"></span>
+                </a>
+            </div>
+            <div class="cta-decoration">
+                <svg viewBox="0 0 200 200" class="cta-circle">
+                    <circle cx="100" cy="100" r="80" fill="none" stroke="#fff" stroke-width="0.5" opacity="0.2"/>
+                    <circle cx="100" cy="100" r="60" fill="none" stroke="#fff" stroke-width="0.5" opacity="0.1"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer" data-scroll-section>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">K.</span>
+                    <p>Creating digital experiences that matter.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">GitHub</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+                <div class="footer-copy">
+                    <span>© 2025 Krish Mishra. All rights reserved.</span>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- BACK TO TOP -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/home.js"></script>
+</body>
+</html>
+

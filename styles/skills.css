@@ -1,0 +1,675 @@
+/* ============================================
+   SKILLS PAGE SPECIFIC STYLES
+   Grid Background + 3D Spheres + Glowing Cards
+   ============================================ */
+
+/* Grid Background */
+.grid-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.grid-pattern {
+    position: absolute;
+    inset: 0;
+    background-image: 
+        linear-gradient(rgba(99, 102, 241, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(99, 102, 241, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(ellipse at center, black 20%, transparent 70%);
+}
+
+.grid-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 800px;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.1) 0%, transparent 60%);
+    animation: grid-pulse 8s ease-in-out infinite;
+}
+
+@keyframes grid-pulse {
+    0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
+    50% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.8; }
+}
+
+/* Floating 3D Spheres */
+.floating-spheres {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.sphere {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.2), transparent 60%);
+    box-shadow: 
+        inset 0 0 50px rgba(99, 102, 241, 0.3),
+        0 0 30px rgba(99, 102, 241, 0.2);
+}
+
+.sphere-1 {
+    width: 300px;
+    height: 300px;
+    top: 10%;
+    right: 10%;
+    background: radial-gradient(circle at 30% 30%, rgba(99, 102, 241, 0.3), rgba(99, 102, 241, 0.1) 50%, transparent 70%);
+    animation: float-sphere 20s ease-in-out infinite;
+}
+
+.sphere-2 {
+    width: 200px;
+    height: 200px;
+    bottom: 20%;
+    left: 5%;
+    background: radial-gradient(circle at 30% 30%, rgba(168, 85, 247, 0.3), rgba(168, 85, 247, 0.1) 50%, transparent 70%);
+    animation: float-sphere 15s ease-in-out infinite reverse;
+}
+
+.sphere-3 {
+    width: 150px;
+    height: 150px;
+    top: 40%;
+    left: 15%;
+    background: radial-gradient(circle at 30% 30%, rgba(6, 182, 212, 0.3), rgba(6, 182, 212, 0.1) 50%, transparent 70%);
+    animation: float-sphere 18s ease-in-out infinite 2s;
+}
+
+.sphere-4 {
+    width: 100px;
+    height: 100px;
+    bottom: 30%;
+    right: 20%;
+    background: radial-gradient(circle at 30% 30%, rgba(236, 72, 153, 0.3), rgba(236, 72, 153, 0.1) 50%, transparent 70%);
+    animation: float-sphere 12s ease-in-out infinite 1s;
+}
+
+@keyframes float-sphere {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(30px, -30px) rotate(90deg); }
+    50% { transform: translate(0, -50px) rotate(180deg); }
+    75% { transform: translate(-30px, -20px) rotate(270deg); }
+}
+
+/* ============================================
+   CONTAINER & GENERAL
+   ============================================ */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.skills-page {
+    position: relative;
+    z-index: 10;
+}
+
+/* Section Tag */
+.section-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.tag-line {
+    width: 40px;
+    height: 2px;
+    background: var(--gradient-1);
+}
+
+.section-tag span:last-child {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--primary-light);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+}
+
+/* ============================================
+   SKILLS HERO
+   ============================================ */
+.skills-hero {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    padding-top: 150px;
+    text-align: center;
+}
+
+.page-title {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.title-line {
+    display: block;
+}
+
+.gradient-text {
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.page-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* ============================================
+   SKILLS ORBIT
+   ============================================ */
+.skills-orbit-section {
+    padding: 60px 0 100px;
+}
+
+.orbit-container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.orbit-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+    background: var(--surface);
+    border: 2px solid rgba(99, 102, 241, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.center-glow {
+    position: absolute;
+    inset: -20px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.3), transparent 70%);
+    border-radius: 50%;
+    animation: center-pulse 3s ease-in-out infinite;
+}
+
+@keyframes center-pulse {
+    0%, 100% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.3); opacity: 0.8; }
+}
+
+.center-text {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--text);
+    z-index: 2;
+}
+
+/* Orbits */
+.orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px dashed rgba(99, 102, 241, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.orbit-1 {
+    width: 280px;
+    height: 280px;
+    animation: orbit-rotate 30s linear infinite;
+}
+
+.orbit-2 {
+    width: 420px;
+    height: 420px;
+    animation: orbit-rotate 45s linear infinite reverse;
+}
+
+@keyframes orbit-rotate {
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.orbit-item {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: var(--surface);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.orbit-item img {
+    width: 28px;
+    height: 28px;
+}
+
+.orbit-item:hover {
+    transform: scale(1.2);
+    border-color: var(--primary);
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
+}
+
+/* Position orbit items around circle */
+.orbit-1 .orbit-item:nth-child(1) { top: -25px; left: 50%; transform: translateX(-50%); }
+.orbit-1 .orbit-item:nth-child(2) { top: 50%; right: -25px; transform: translateY(-50%); }
+.orbit-1 .orbit-item:nth-child(3) { bottom: -25px; left: 50%; transform: translateX(-50%); }
+.orbit-1 .orbit-item:nth-child(4) { top: 50%; left: -25px; transform: translateY(-50%); }
+
+.orbit-2 .orbit-item:nth-child(1) { top: -25px; left: 50%; transform: translateX(-50%); }
+.orbit-2 .orbit-item:nth-child(2) { top: 20%; right: -25px; }
+.orbit-2 .orbit-item:nth-child(3) { bottom: 20%; right: -25px; }
+.orbit-2 .orbit-item:nth-child(4) { bottom: -25px; left: 50%; transform: translateX(-50%); }
+.orbit-2 .orbit-item:nth-child(5) { top: 50%; left: -25px; transform: translateY(-50%); }
+
+/* ============================================
+   SKILLS CARDS
+   ============================================ */
+.skills-cards-section {
+    padding: 80px 0;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Glowing Card */
+.skill-card {
+    position: relative;
+    background: rgba(15, 15, 25, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 24px;
+    overflow: hidden;
+    transition: all 0.4s var(--ease);
+}
+
+.card-glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 150px;
+    background: radial-gradient(ellipse at top, rgba(var(--glow-color, 99, 102, 241), 0.15), transparent 70%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+.skill-card:hover .card-glow {
+    opacity: 1;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(var(--glow-color, 99, 102, 241), 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.card-content {
+    position: relative;
+    padding: 35px;
+    z-index: 2;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.card-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(99, 102, 241, 0.1);
+    border-radius: 14px;
+}
+
+.card-icon svg {
+    width: 26px;
+    height: 26px;
+    color: var(--primary);
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+/* Skill Tags */
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.skill-tag {
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+    background: rgba(99, 102, 241, 0.1);
+    border-color: var(--primary);
+    color: var(--text);
+}
+
+/* Skill Bar */
+.skill-bar-container {
+    margin-top: auto;
+}
+
+.skill-bar-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.skill-bar {
+    height: 6px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-bar-fill {
+    height: 100%;
+    width: 0;
+    background: var(--gradient-1);
+    border-radius: 10px;
+    transition: width 1.5s var(--ease);
+}
+
+.skill-bar-fill.animated {
+    width: var(--target-width);
+}
+
+/* ============================================
+   TECH MARQUEE
+   ============================================ */
+.tech-marquee-section {
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+.marquee-container {
+    position: relative;
+}
+
+.marquee-row {
+    display: flex;
+    animation: marquee-scroll 15s linear infinite;
+}
+
+.marquee-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-right: 40px;
+}
+
+.tech-item {
+    font-size: 2rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.1);
+    white-space: nowrap;
+    transition: color 0.3s ease;
+}
+
+.tech-item:hover {
+    color: var(--primary);
+}
+
+.tech-dot {
+    color: var(--primary);
+    font-size: 1rem;
+}
+
+@keyframes marquee-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.footer {
+    padding: 40px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center;
+}
+
+.footer p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 1024px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .orbit-container {
+        width: 400px;
+        height: 400px;
+    }
+    
+    .orbit-1 { width: 220px; height: 220px; }
+    .orbit-2 { width: 340px; height: 340px; }
+    
+    .container {
+        padding: 0 30px;
+    }
+    
+    .skills-hero {
+        padding-top: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .nav-contact {
+        display: none !important;
+    }
+    
+    .menu-toggle {
+        display: flex !important;
+    }
+    
+    .container {
+        padding: 0 20px;
+    }
+    
+    .skills-hero {
+        min-height: 40vh;
+        padding-top: 100px;
+    }
+    
+    .page-title {
+        font-size: clamp(2rem, 10vw, 3rem);
+    }
+    
+    .page-subtitle {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .skills-orbit-section {
+        padding: 40px 0 60px;
+    }
+    
+    .orbit-container {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .orbit-1 { width: 180px; height: 180px; }
+    .orbit-2 { width: 260px; height: 260px; }
+    
+    .orbit-item {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .orbit-item img {
+        width: 22px;
+        height: 22px;
+    }
+    
+    .center-logo {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .center-logo img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .section-header {
+        margin-bottom: 40px;
+    }
+    
+    .section-title {
+        font-size: clamp(1.5rem, 6vw, 2rem);
+    }
+    
+    .section-tag span:last-child {
+        font-size: 0.75rem;
+        letter-spacing: 2px;
+    }
+    
+    .tag-line {
+        width: 30px;
+    }
+    
+    .floating-spheres {
+        display: none;
+    }
+    
+    .skill-card {
+        padding: 1.5rem;
+    }
+    
+    .skill-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .skill-name {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-hero {
+        min-height: 35vh;
+        padding-top: 80px;
+    }
+    
+    .page-title {
+        font-size: clamp(1.8rem, 12vw, 2.5rem);
+    }
+    
+    .page-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .orbit-container {
+        width: 260px;
+        height: 260px;
+    }
+    
+    .orbit-1 { width: 150px; height: 150px; }
+    .orbit-2 { width: 220px; height: 220px; }
+    
+    .orbit-item {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .orbit-item img {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .center-logo {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .skill-card {
+        padding: 1.25rem;
+    }
+    
+    .skill-level {
+        height: 4px;
+    }
+    
+    .skills-orbit-section {
+        padding: 30px 0 40px;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+}
