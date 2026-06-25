@@ -138,6 +138,20 @@ img {
     font-weight: 900;
     color: #fff;
     letter-spacing: -0.05em;
+    transition: transform 0.3s ease;
+}
+
+.logo-k:hover {
+    transform: scale(1.05);
+}
+
+.logo-dot {
+    color: #6366f1;
+    transition: color 0.3s ease;
+}
+
+.nav-logo:hover .logo-dot {
+    color: #ec4899;
 }
 
 .nav-links {
@@ -580,4 +594,12 @@ img {
         padding: 0.9rem 2rem;
         font-size: 0.9rem;
     }
+}
+
+/* ============================================
+   ACCESSIBILITY & FOCUS INDICATORS
+   ============================================ */
+:focus-visible {
+    outline: 2px dashed var(--primary) !important;
+    outline-offset: 4px !important;
 }

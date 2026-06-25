@@ -1360,8 +1360,48 @@
         font-size: 2rem;
     }
     
-    .action-btn {
-        padding: 12px 20px;
-        font-size: 0.85rem;
+}
+
+/* ============================================
+   PROJECT SCREENSHOT IMAGES & HOVER EFFECTS
+   ============================================ */
+.project-image-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/10;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #0d0d15;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.5);
+    transition: border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    filter: grayscale(40%);
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.6s ease;
+}
+
+.project-card:hover .project-image-wrapper {
+    border-color: rgba(99, 102, 241, 0.4);
+    box-shadow: 0 20px 50px rgba(99, 102, 241, 0.2);
+}
+
+.project-card:hover .project-image {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments for screenshots */
+@media (max-width: 768px) {
+    .project-image-wrapper {
+        aspect-ratio: 16/9;
+        max-width: 100%;
+        margin: 0 auto;
     }
 }
+

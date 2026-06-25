@@ -526,14 +526,14 @@ function initGallery() {
     
     // Gallery images - using your images from IMAGES folder
     const galleryImages = [
-        { src: 'IMAGES/IMG-20250828-WA0007.jpg', alt: 'Photo 1' },
-        { src: 'IMAGES/IMG20251106090239.jpg', alt: 'Photo 2' },
-        { src: 'IMAGES/IMG20251106090726 (1).jpg', alt: 'Photo 3' },
-        { src: 'IMAGES/WhatsApp Image 2026-01-01 at 15.48.11.jpeg', alt: 'Photo 4' },
-        { src: 'IMAGES/WhatsApp Image 2026-01-01 at 15.48.19 (1).jpeg', alt: 'Photo 5' },
-        { src: 'IMAGES/WhatsApp Image 2026-01-01 at 15.48.19.jpeg', alt: 'Photo 6' },
-        { src: 'IMAGES/WhatsApp Image 2026-01-01 at 15.48.20 (1).jpeg', alt: 'Photo 7' },
-        { src: 'IMAGES/WhatsApp Image 2026-01-01 at 15.48.20.jpeg', alt: 'Photo 8' }
+        { src: 'IMAGES/IMG-20250828-WA0007.webp', alt: 'Photo 1' },
+        { src: 'IMAGES/IMG20251106090239.webp', alt: 'Photo 2' },
+        { src: 'IMAGES/IMG20251106090726 (1).webp', alt: 'Photo 3' },
+        { src: 'IMAGES/WhatsApp Image 2026-01-01 at 15.48.11.webp', alt: 'Photo 4' },
+        { src: 'IMAGES/WhatsApp Image 2026-01-01 at 15.48.19 (1).webp', alt: 'Photo 5' },
+        { src: 'IMAGES/WhatsApp Image 2026-01-01 at 15.48.19.webp', alt: 'Photo 6' },
+        { src: 'IMAGES/WhatsApp Image 2026-01-01 at 15.48.20 (1).webp', alt: 'Photo 7' },
+        { src: 'IMAGES/WhatsApp Image 2026-01-01 at 15.48.20.webp', alt: 'Photo 8' }
     ];
     
     // Dome gallery state

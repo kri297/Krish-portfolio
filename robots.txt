@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://portfolioofkrish.vercel.app/sitemap.xml

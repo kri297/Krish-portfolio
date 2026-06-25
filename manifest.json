@@ -1,0 +1,16 @@
+{
+  "short_name": "KM Portfolio",
+  "name": "Krish Mishra | Cybersecurity & Software Engineering Portfolio",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ],
+  "start_url": "/home.html",
+  "background_color": "#081B33",
+  "theme_color": "#081B33",
+  "display": "standalone",
+  "orientation": "portrait"
+}
