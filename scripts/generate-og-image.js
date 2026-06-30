@@ -47,7 +47,7 @@ const path = require('path');
           <text x="0" y="110" font-family="'Segoe UI', -apple-system, sans-serif" font-size="76" font-weight="900" fill="#ffffff" letter-spacing="-1">KRISH MISHRA</text>
 
           <!-- Divider Line -->
-          <line x1="0" y1="150" x2="600" y2="150" stroke="#6366f1" stroke-width="4" stroke-linecap="round" />
+          <line x1="0" y1="150" x2="600" y2="150" stroke="#00b4d8" stroke-width="4" stroke-linecap="round" />
 
           <!-- Subtitle: Roles -->
           <text x="0" y="210" font-family="'Segoe UI', -apple-system, sans-serif" font-size="28" font-weight="600" fill="#38bdf8" letter-spacing="0.5">Cybersecurity &amp; Software Engineering</text>

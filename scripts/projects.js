@@ -60,7 +60,7 @@ function initCardEffects() {
             card.style.setProperty('--mouse-y', `${y}px`);
             
             // Dynamic glow color based on position
-            const hue = (x / rect.width) * 60 + 230; // Range from blue to purple
+            const hue = (x / rect.width) * 60 + 180; // Range from teal to blue
             if (bgGlow) {
                 bgGlow.style.background = `
                     radial-gradient(600px circle at ${x}px ${y}px,
@@ -197,7 +197,7 @@ function initCursorGlow() {
         position: fixed;
         width: 400px;
         height: 400px;
-        background: radial-gradient(circle, rgba(99, 102, 241, 0.08) 0%, transparent 70%);
+        background: radial-gradient(circle, rgba(0, 180, 216, 0.08) 0%, transparent 70%);
         border-radius: 50%;
         pointer-events: none;
         z-index: 0;
@@ -260,7 +260,7 @@ function initScrollProgress() {
         top: 0;
         left: 0;
         height: 3px;
-        background: linear-gradient(90deg, #6366f1, #a855f7, #06b6d4);
+        background: linear-gradient(90deg, #0077b6, #00b4d8, #10b981);
         z-index: 9999;
         transform-origin: left;
         transform: scaleX(0);

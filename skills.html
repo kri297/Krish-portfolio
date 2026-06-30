@@ -6,8 +6,8 @@
     <title>Skills | Krish Mishra | Cybersecurity & Software Engineering Portfolio</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Krish Mishra's professional portfolio showcasing Cybersecurity, Software Engineering, AI projects, Java, DSA, Web Development, technical leadership, certifications, and internship experience.">
-    <meta name="theme-color" content="#081B33">
+    <meta name="description" content="Professional portfolio showcasing Cybersecurity, Software Engineering, AI Projects, Java, DSA, Certifications, Leadership and Technical Experience.">
+    <meta name="theme-color" content="#030712">
     <link rel="canonical" href="https://portfolioofkrish.vercel.app/skills.html">
     
     <!-- PWA Favicon & Manifest -->
@@ -18,7 +18,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://portfolioofkrish.vercel.app/skills.html">
     <meta property="og:title" content="Skills | Krish Mishra | Cybersecurity & Software Engineering Portfolio">
-    <meta property="og:description" content="Explore my portfolio featuring Cybersecurity projects, Software Engineering, AI applications, Java, DSA, internships, leadership, and technical achievements.">
+    <meta property="og:description" content="Professional portfolio showcasing Cybersecurity, Software Engineering, AI Projects, Java, DSA, Certifications, Leadership and Technical Experience.">
     <meta property="og:image" content="https://portfolioofkrish.vercel.app/og-image.png">
     <meta property="og:site_name" content="Krish Mishra Portfolio">
 
@@ -26,28 +26,52 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://portfolioofkrish.vercel.app/skills.html">
     <meta name="twitter:title" content="Skills | Krish Mishra | Cybersecurity & Software Engineering Portfolio">
-    <meta name="twitter:description" content="Cybersecurity • Software Engineering • AI Projects • Java • DSA • Web Development">
+    <meta name="twitter:description" content="Cybersecurity • Software Engineering • AI Projects • Java • DSA • Certifications • Leadership">
     <meta name="twitter:image" content="https://portfolioofkrish.vercel.app/og-image.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/skills.css">
+    <link rel="stylesheet" href="styles/main-v3.css">
+    <link rel="stylesheet" href="styles/skills.css?v=1782543556095">
 </head>
 <body data-page="skills">
+    <!-- NAVIGATION -->
+    <nav class="nav">
+        <a href="home.html?v=1782744551161" class="nav-logo" aria-label="Krish Mishra Portfolio Home">
+            <span class="logo-k">KM<span class="logo-dot">.</span></span>
+        </a>
+        <div class="nav-links">
+            <a href="home.html?v=1782744551162" class="nav-link">Home</a>
+            <a href="about.html?v=1782744551162" class="nav-link">About</a>
+            <a href="skills.html?v=1782744551162" class="nav-link active">Skills</a>
+            <a href="projects.html?v=1782744551162" class="nav-link">Projects</a>
+            <a href="contact.html?v=1782744551162" class="nav-link">Contact</a>
+        </div>
+        <a href="contact.html?v=1782744551162" class="nav-contact">
+            <span>Let's Talk</span>
+            <div class="nav-contact-arrow">→</div>
+        </a>
+        <button class="menu-toggle" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+    
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu">
+        <a href="home.html?v=1782744551162" class="mobile-nav-link">Home</a>
+        <a href="about.html?v=1782744551162" class="mobile-nav-link">About</a>
+        <a href="skills.html?v=1782744551162" class="mobile-nav-link">Skills</a>
+        <a href="projects.html?v=1782744551162" class="mobile-nav-link">Projects</a>
+        <a href="contact.html?v=1782744551162" class="mobile-nav-link">Contact</a>
+        <a href="contact.html?v=1782744551162" class="mobile-cta">Let's Talk</a>
+    </div>
     <!-- GRID BACKGROUND - UNIQUE TO SKILLS PAGE -->
     <div class="grid-bg">
         <div class="grid-pattern"></div>
         <div class="grid-glow"></div>
-    </div>
-
-    <!-- FLOATING 3D SPHERES -->
-    <div class="floating-spheres">
-        <div class="sphere sphere-1"></div>
-        <div class="sphere sphere-2"></div>
-        <div class="sphere sphere-3"></div>
-        <div class="sphere sphere-4"></div>
     </div>
 
     <!-- LIQUID CURSOR -->
@@ -55,24 +79,6 @@
         <div class="cursor-dot"></div>
         <div class="cursor-circle"></div>
     </div>
-
-    <!-- NAVIGATION -->
-    <nav class="nav">
-        <a href="home.html" class="nav-logo" aria-label="Krish Mishra Portfolio Home">
-            <span class="logo-k">KM<span class="logo-dot">.</span></span>
-        </a>
-        <div class="nav-links">
-            <a href="home.html" class="nav-link">Home</a>
-            <a href="about.html" class="nav-link">About</a>
-            <a href="skills.html" class="nav-link active">Skills</a>
-            <a href="projects.html" class="nav-link">Projects</a>
-            <a href="contact.html" class="nav-link">Contact</a>
-        </div>
-        <a href="contact.html" class="nav-contact">
-            <span>Let's Talk</span>
-            <div class="nav-contact-arrow">→</div>
-        </a>
-    </nav>
 
     <!-- MAIN CONTENT -->
     <main class="skills-page">
@@ -93,268 +99,207 @@
             </div>
         </section>
 
-        <!-- SKILLS ORBIT / 3D SPHERE SECTION -->
-        <section class="skills-orbit-section">
+        
+
+        <!-- INTERACTIVE DASHBOARD SECTION -->
+        <section class="dashboard-section">
             <div class="container">
-                <div class="orbit-container">
-                    <div class="orbit-center">
-                        <div class="center-glow"></div>
-                        <span class="center-text">Full Stack</span>
+                <div class="dashboard-container">
+                    
+                    <!-- Category Menu -->
+                    <div class="category-menu">
+                        <button class="cat-btn active" data-target="cyber">
+                            Cybersecurity
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </button>
+                        <button class="cat-btn" data-target="dev">
+                            Software Engineering
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </button>
+                        <button class="cat-btn" data-target="lang">
+                            Languages
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </button>
+                        <button class="cat-btn" data-target="webdev">
+                            Web Development
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </button>
                     </div>
-                    <div class="orbit orbit-1">
-                        <div class="orbit-item" style="--i: 0">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" loading="lazy">
+
+                    <!-- Bento Display Area -->
+                    <div class="bento-display">
+                        
+                        <!-- Cybersecurity Grid -->
+                        <div class="bento-grid active" id="cyber">
+                            <div class="bento-box bento-large">
+                                <svg class="bento-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                                <div class="bento-title">Network Security</div>
+                                <div class="bento-desc">Securing infrastructure and analyzing threats.</div>
+                            </div>
+                            <div class="bento-box bento-wide">
+                                <svg class="bento-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                                <div class="bento-title">Digital Forensics</div>
+                            </div>
+                            <div class="bento-box">
+                                <div class="bento-title">NIST</div>
+                            </div>
+                            <div class="bento-box">
+                                <div class="bento-title">ICS Security</div>
+                            </div>
                         </div>
-                        <div class="orbit-item" style="--i: 1">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" loading="lazy">
+
+                        <!-- Software Engineering Grid -->
+                        <div class="bento-grid" id="dev">
+                            <div class="bento-box bento-large">
+                                <svg class="bento-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                                <div class="bento-title">System Design</div>
+                                <div class="bento-desc">Designing scalable & robust software architectures.</div>
+                            </div>
+                            <div class="bento-box bento-tall">
+                                <div class="bento-title">DSA</div>
+                                <div class="bento-desc">Algorithms & Data Structures</div>
+                            </div>
+                            <div class="bento-box">
+                                <div class="bento-title">DBMS</div>
+                            </div>
+                            <div class="bento-box">
+                                <div class="bento-title">Git / GitHub</div>
+                            </div>
+                            <div class="bento-box bento-wide">
+                                <div class="bento-title">Object-Oriented Programming</div>
+                            </div>
                         </div>
-                        <div class="orbit-item" style="--i: 2">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" loading="lazy">
+
+                        <!-- Languages Grid -->
+                        <div class="bento-grid" id="lang">
+                            <div class="bento-box bento-large">
+                                <div class="bento-title" style="font-size: 3rem;">☕</div>
+                                <div class="bento-title">Java</div>
+                                <div class="bento-desc">Primary language for enterprise and DSA.</div>
+                            </div>
+                            <div class="bento-box">
+                                <div class="bento-title" style="font-size: 2rem;">🐍</div>
+                                <div class="bento-title">Python</div>
+                            </div>
+                            <div class="bento-box">
+                                <div class="bento-title" style="font-size: 2rem;">⚡</div>
+                                <div class="bento-title">JavaScript</div>
+                            </div>
+                            <div class="bento-box bento-wide">
+                                <div class="bento-title" style="font-size: 2rem;">🗄️</div>
+                                <div class="bento-title">SQL (PostgreSQL / MySQL)</div>
+                            </div>
                         </div>
-                        <div class="orbit-item" style="--i: 3">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" loading="lazy">
+
+                        <!-- Web Development Grid -->
+                        <div class="bento-grid" id="webdev">
+                            <div class="bento-box bento-large">
+                                <svg class="bento-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                                <div class="bento-title">Full Stack React</div>
+                                <div class="bento-desc">Building dynamic UIs with React & Next.js</div>
+                            </div>
+                            <div class="bento-box">
+                                <div class="bento-title" style="font-size: 2rem;">⚛️</div>
+                                <div class="bento-title">React</div>
+                            </div>
+                            <div class="bento-box">
+                                <div class="bento-title" style="font-size: 2rem;">▲</div>
+                                <div class="bento-title">Next.js</div>
+                            </div>
+                            <div class="bento-box bento-wide">
+                                <div class="bento-title">Node.js & Express</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="orbit orbit-2">
-                        <div class="orbit-item" style="--i: 0">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" loading="lazy">
-                        </div>
-                        <div class="orbit-item" style="--i: 1">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" loading="lazy">
-                        </div>
-                        <div class="orbit-item" style="--i: 2">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" loading="lazy">
-                        </div>
-                        <div class="orbit-item" style="--i: 3">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" loading="lazy">
-                        </div>
-                        <div class="orbit-item" style="--i: 4">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" loading="lazy">
-                        </div>
+
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SKILLS CARDS SECTION -->
-        <section class="skills-cards-section">
+        <!-- CERTIFICATIONS SECTION -->
+        <section class="certifications-section">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Technical Expertise</h2>
+                    <h2 class="section-title">Certifications</h2>
                 </div>
-
-                <div class="skills-grid">
-                    <!-- Frontend -->
-                    <div class="skill-card glow-card" data-glow-color="61, 90, 254">
+                <div class="certs-grid">
+                    <div class="cert-card glow-card" data-glow-color="16, 185, 129">
                         <div class="card-glow"></div>
                         <div class="card-content">
-                            <div class="card-header">
-                                <div class="card-icon">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                                        <line x1="8" y1="21" x2="16" y2="21"/>
-                                        <line x1="12" y1="17" x2="12" y2="21"/>
+                            <div class="cert-icon">🛡️</div>
+                            <h3 class="cert-name">Industrial Cybersecurity Essentials</h3>
+                            <p class="cert-issuer">TXOne Networks / Concept Validation</p>
+                            <div class="cert-footer">
+                                <span class="cert-status">Verified</span>
+                                <a href="https://www.linkedin.com/in/krish-mishra-45933a306/" target="_blank" rel="noopener" class="cert-linkedin-btn" aria-label="View Certification on LinkedIn">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                                     </svg>
-                                </div>
-                                <h3 class="card-title">Frontend</h3>
-                            </div>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Html</span>
-                                <span class="skill-tag">JavaScript</span>
-                                <span class="skill-tag">Tailwind CSS</span>
-                                <span class="skill-tag">Framer Motion</span>
-                                <span class="skill-tag">React</span>
-                            </div>
-                            <div class="skill-bar-container">
-                                <div class="skill-bar-label">
-                                    <span>Proficiency</span>
-                                    <span>85%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-bar-fill" data-width="95"></div>
-                                </div>
+                                    <span>Verify</span>
+                                </a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Backend -->
-                    <div class="skill-card glow-card" data-glow-color="168, 85, 247">
+                    <div class="cert-card glow-card" data-glow-color="0, 180, 216">
                         <div class="card-glow"></div>
                         <div class="card-content">
-                            <div class="card-header">
-                                <div class="card-icon">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                        <ellipse cx="12" cy="5" rx="9" ry="3"/>
-                                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
-                                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                            <div class="cert-icon">🌐</div>
+                            <h3 class="cert-name">Cisco Networking Academy</h3>
+                            <p class="cert-issuer">Cisco / Network Security & Routing</p>
+                            <div class="cert-footer">
+                                <span class="cert-status">Verified</span>
+                                <a href="https://www.linkedin.com/in/krish-mishra-45933a306/" target="_blank" rel="noopener" class="cert-linkedin-btn" aria-label="View Certification on LinkedIn">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                                     </svg>
-                                </div>
-                                <h3 class="card-title">Backend</h3>
-                            </div>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Node.js</span>
-                                <span class="skill-tag">Express</span>
-                                <span class="skill-tag">Python</span>
-                                <span class="skill-tag">FastAPI</span>
-                                <span class="skill-tag">GraphQL</span>
-                                <span class="skill-tag">REST APIs</span>
-                            </div>
-                            <div class="skill-bar-container">
-                                <div class="skill-bar-label">
-                                    <span>Proficiency</span>
-                                    <span>90%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-bar-fill" data-width="90"></div>
-                                </div>
+                                    <span>Verify</span>
+                                </a>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Database -->
-                    <div class="skill-card glow-card" data-glow-color="6, 182, 212">
-                        <div class="card-glow"></div>
-                        <div class="card-content">
-                            <div class="card-header">
-                                <div class="card-icon">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                                        <path d="M2 17l10 5 10-5"/>
-                                        <path d="M2 12l10 5 10-5"/>
-                                    </svg>
-                                </div>
-                                <h3 class="card-title">Database</h3>
-                            </div>
-                            <div class="skill-tags">
-                                <span class="skill-tag">MongoDB</span>
-                                <span class="skill-tag">PostgreSQL</span>
-                                <span class="skill-tag">MySQL</span>
-    
-                            </div>
-                            <div class="skill-bar-container">
-                                <div class="skill-bar-label">
-                                    <span>Proficiency</span>
-                                    <span>88%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-bar-fill" data-width="88"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- DevOps -->
-                   
-                    <!-- Design -->
-                    <div class="skill-card glow-card" data-glow-color="34, 197, 94">
-                        <div class="card-glow"></div>
-                        <div class="card-content">
-                            <div class="card-header">
-                                <div class="card-icon">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                        <path d="M12 19l7-7 3 3-7 7-3-3z"/>
-                                        <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
-                                        <path d="M2 2l7.586 7.586"/>
-                                        <circle cx="11" cy="11" r="2"/>
-                                    </svg>
-                                </div>
-                                <h3 class="card-title">Design</h3>
-                            </div>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Figma</span>
-                                <span class="skill-tag">UI/UX</span>
-                                <span class="skill-tag">Canva</span>
-                                <span class="skill-tag">Animation</span>
-                            </div>
-                            <div class="skill-bar-container">
-                                <div class="skill-bar-label">
-                                    <span>Proficiency</span>
-                                    <span>85%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-bar-fill" data-width="85"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Tools -->
-                    <div class="skill-card glow-card" data-glow-color="251, 146, 60">
-                        <div class="card-glow"></div>
-                        <div class="card-content">
-                            <div class="card-header">
-                                <div class="card-icon">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                        <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
-                                    </svg>
-                                </div>
-                                <h3 class="card-title">Tools</h3>
-                            </div>
-                            <div class="skill-tags">
-                                <span class="skill-tag">VS Code</span>
-                                <span class="skill-tag">Git</span>
-                                <span class="skill-tag">GitHub</span>
-                                <span class="skill-tag">Netlify</span>
-                                <span class="skill-tag">Vercel</span>
-                            </div>
-                            <div class="skill-bar-container">
-                                <div class="skill-bar-label">
-                                    <span>Proficiency</span>
-                                    <span>92%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-bar-fill" data-width="92"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                </div></section>
 
         <!-- TECH STACK MARQUEE -->
-        <section class="tech-marquee-section">
-            <div class="marquee-container">
-                <div class="marquee-row">
+        <section class="marquee-section">
+            <div class="marquee-track">
                     <div class="marquee-content">
-                        <span class="tech-item">React</span>
-                        <span class="tech-dot">•</span>
-                        <span class="tech-item">Next.js</span>
-                        <span class="tech-dot">•</span>
-                        <span class="tech-item">TypeScript</span>
-                        <span class="tech-dot">•</span>
-                        <span class="tech-item">Node.js</span>
-                        <span class="tech-dot">•</span>
-                        <span class="tech-item">Python</span>
-                        <span class="tech-dot">•</span>
-                        <span class="tech-item">MongoDB</span>
-                        <span class="tech-dot">•</span>
-                        <span class="tech-item">PostgreSQL</span>
-                        <span class="tech-dot">•</span>
-                        <span class="tech-item">Docker</span>
-                        <span class="tech-dot">•</span>
+                        <span class="marquee-item">React</span>
+                        <span class="marquee-star">*</span>
+                        <span class="marquee-item">Next.js</span>
+                        <span class="marquee-star">*</span>
+                        <span class="marquee-item">TypeScript</span>
+                        <span class="marquee-star">*</span>
+                        <span class="marquee-item">Node.js</span>
+                        <span class="marquee-star">*</span>
+                        <span class="marquee-item">Python</span>
+                        <span class="marquee-star">*</span>
+                        <span class="marquee-item">MongoDB</span>
+                        <span class="marquee-star">*</span>
+                        <span class="marquee-item">PostgreSQL</span>
+                        <span class="marquee-star">*</span>
+                        <span class="marquee-item">Docker</span>
+                        <span class="marquee-star">*</span>
                     </div>
                     <div class="marquee-content" aria-hidden="true">
-                        <span class="tech-item">React</span>
-                        <span class="tech-dot">•</span>
-                        <span class="tech-item">Next.js</span>
-                        <span class="tech-dot">•</span>
-                        <span class="tech-item">TypeScript</span>
-                        <span class="tech-dot">•</span>
-                        <span class="tech-item">Node.js</span>
-                        <span class="tech-dot">•</span>
-                        <span class="tech-item">Python</span>
-                        <span class="tech-dot">•</span>
-                        <span class="tech-item">MongoDB</span>
-                        <span class="tech-dot">•</span>
-                        <span class="tech-item">PostgreSQL</span>
-                        <span class="tech-dot">•</span>
-                        <span class="tech-item">Docker</span>
-                        <span class="tech-dot">•</span>
+                        <span class="marquee-item">React</span>
+                        <span class="marquee-star">*</span>
+                        <span class="marquee-item">Next.js</span>
+                        <span class="marquee-star">*</span>
+                        <span class="marquee-item">TypeScript</span>
+                        <span class="marquee-star">*</span>
+                        <span class="marquee-item">Node.js</span>
+                        <span class="marquee-star">*</span>
+                        <span class="marquee-item">Python</span>
+                        <span class="marquee-star">*</span>
+                        <span class="marquee-item">MongoDB</span>
+                        <span class="marquee-star">*</span>
+                        <span class="marquee-item">PostgreSQL</span>
+                        <span class="marquee-star">*</span>
+                        <span class="marquee-item">Docker</span>
+                        <span class="marquee-star">*</span>
                     </div>
-                </div>
-            </div>
-        </section>
+                </div></section>
     </main>
 
     <!-- FOOTER -->

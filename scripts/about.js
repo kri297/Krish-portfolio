@@ -58,7 +58,7 @@ function initCursor() {
     animate();
     
     // Hover effects
-    const hoverElements = document.querySelectorAll('a, button, .timeline-card, .service-card, .orbit-icon');
+    const hoverElements = document.querySelectorAll('a, button, .timeline-card, .service-card, .orbit-icon, .leadership-card');
     hoverElements.forEach(el => {
         el.addEventListener('mouseenter', () => {
             follower.classList.add('hover');
@@ -96,7 +96,7 @@ function initParticles() {
             vy: (Math.random() - 0.5) * 0.3,
             radius: Math.random() * 2 + 1,
             color: isColored 
-                ? `rgba(99, 102, 241, ${0.3 + Math.random() * 0.3})`
+                ? `rgba(0, 180, 216, ${0.3 + Math.random() * 0.3})`
                 : `rgba(255, 255, 255, ${0.2 + Math.random() * 0.3})`,
             isColored: isColored
         });
@@ -134,7 +134,7 @@ function initParticles() {
                     ctx.moveTo(p.x, p.y);
                     ctx.lineTo(p2.x, p2.y);
                     ctx.strokeStyle = p.isColored 
-                        ? `rgba(99, 102, 241, ${opacity})`
+                        ? `rgba(0, 180, 216, ${opacity})`
                         : `rgba(255, 255, 255, ${opacity})`;
                     ctx.lineWidth = 0.5;
                     ctx.stroke();
@@ -631,7 +631,7 @@ function initGallery() {
                     star.x, star.y, 0,
                     star.x, star.y, star.radius * 3
                 );
-                gradient.addColorStop(0, `rgba(99, 102, 241, ${star.alpha * 0.3})`);
+                gradient.addColorStop(0, `rgba(0, 180, 216, ${star.alpha * 0.3})`);
                 gradient.addColorStop(1, 'transparent');
                 starsCtx.fillStyle = gradient;
                 starsCtx.fill();

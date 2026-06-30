@@ -252,38 +252,35 @@ function initNavHover() {
 
 // Mobile Menu - Hamburger functionality
 function initMobileMenu() {
-    // Create mobile menu elements if they don't exist
     const nav = document.querySelector('.nav');
     if (!nav) return;
     
-    // Check if menu toggle already exists
-    if (document.querySelector('.menu-toggle')) return;
+    let menuToggle = document.querySelector('.menu-toggle');
+    let mobileMenu = document.querySelector('.mobile-menu');
     
-    // Create hamburger button
-    const menuToggle = document.createElement('button');
-    menuToggle.className = 'menu-toggle';
-    menuToggle.setAttribute('aria-label', 'Toggle menu');
-    menuToggle.innerHTML = '<span></span><span></span><span></span>';
+    // Create if they don't exist
+    if (!menuToggle) {
+        menuToggle = document.createElement('button');
+        menuToggle.className = 'menu-toggle';
+        menuToggle.setAttribute('aria-label', 'Toggle menu');
+        menuToggle.innerHTML = '<span></span><span></span><span></span>';
+        nav.appendChild(menuToggle);
+    }
     
-    // Create mobile menu overlay
-    const mobileMenu = document.createElement('div');
-    mobileMenu.className = 'mobile-menu';
-    
-    // Get current page for active state
-    const currentPage = window.location.pathname.split('/').pop() || 'home.html';
-    
-    mobileMenu.innerHTML = `
-        <a href="home.html" class="mobile-nav-link ${currentPage === 'home.html' || currentPage === '' ? 'active' : ''}">Home</a>
-        <a href="about.html" class="mobile-nav-link ${currentPage === 'about.html' ? 'active' : ''}">About</a>
-        <a href="skills.html" class="mobile-nav-link ${currentPage === 'skills.html' ? 'active' : ''}">Skills</a>
-        <a href="projects.html" class="mobile-nav-link ${currentPage === 'projects.html' ? 'active' : ''}">Projects</a>
-        <a href="contact.html" class="mobile-nav-link ${currentPage === 'contact.html' ? 'active' : ''}">Contact</a>
-        <a href="contact.html" class="mobile-cta">Let's Talk</a>
-    `;
-    
-    // Append to nav and body
-    nav.appendChild(menuToggle);
-    document.body.appendChild(mobileMenu);
+    if (!mobileMenu) {
+        mobileMenu = document.createElement('div');
+        mobileMenu.className = 'mobile-menu';
+        const currentPage = window.location.pathname.split('/').pop() || 'home.html';
+        mobileMenu.innerHTML = `
+            <a href="home.html" class="mobile-nav-link ${currentPage === 'home.html' || currentPage === '' ? 'active' : ''}">Home</a>
+            <a href="about.html" class="mobile-nav-link ${currentPage === 'about.html' ? 'active' : ''}">About</a>
+            <a href="skills.html" class="mobile-nav-link ${currentPage === 'skills.html' ? 'active' : ''}">Skills</a>
+            <a href="projects.html" class="mobile-nav-link ${currentPage === 'projects.html' ? 'active' : ''}">Projects</a>
+            <a href="contact.html" class="mobile-nav-link ${currentPage === 'contact.html' ? 'active' : ''}">Contact</a>
+            <a href="contact.html" class="mobile-cta">Let's Talk</a>
+        `;
+        document.body.appendChild(mobileMenu);
+    }
     
     // Toggle menu function
     function toggleMenu() {
@@ -293,6 +290,8 @@ function initMobileMenu() {
     }
     
     // Event listeners
+    // Avoid duplicate attachments
+    menuToggle.removeEventListener('click', toggleMenu);
     menuToggle.addEventListener('click', toggleMenu);
     
     // Close menu when clicking a link

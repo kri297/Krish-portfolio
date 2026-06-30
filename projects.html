@@ -7,7 +7,7 @@
     
     <!-- SEO Meta Tags -->
     <meta name="description" content="Krish Mishra's professional portfolio showcasing Cybersecurity, Software Engineering, AI projects, Java, DSA, Web Development, technical leadership, certifications, and internship experience.">
-    <meta name="theme-color" content="#081B33">
+    <meta name="theme-color" content="#030712">
     <link rel="canonical" href="https://portfolioofkrish.vercel.app/projects.html">
     
     <!-- PWA Favicon & Manifest -->
@@ -32,33 +32,47 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/main-v3.css">
+    <link rel="stylesheet" href="styles/projects.css?v=1782543556095">
 </head>
 <body>
+    <!-- NAVIGATION -->
+    <nav class="nav">
+        <a href="home.html?v=1782744551161" class="nav-logo" aria-label="Krish Mishra Portfolio Home">
+            <span class="logo-k">KM<span class="logo-dot">.</span></span>
+        </a>
+        <div class="nav-links">
+            <a href="home.html?v=1782744551162" class="nav-link">Home</a>
+            <a href="about.html?v=1782744551162" class="nav-link">About</a>
+            <a href="skills.html?v=1782744551162" class="nav-link">Skills</a>
+            <a href="projects.html?v=1782744551162" class="nav-link active">Projects</a>
+            <a href="contact.html?v=1782744551162" class="nav-link">Contact</a>
+        </div>
+        <a href="contact.html?v=1782744551162" class="nav-contact">
+            <span>Let's Talk</span>
+            <div class="nav-contact-arrow">→</div>
+        </a>
+        <button class="menu-toggle" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+    
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu">
+        <a href="home.html?v=1782744551162" class="mobile-nav-link">Home</a>
+        <a href="about.html?v=1782744551162" class="mobile-nav-link">About</a>
+        <a href="skills.html?v=1782744551162" class="mobile-nav-link">Skills</a>
+        <a href="projects.html?v=1782744551162" class="mobile-nav-link">Projects</a>
+        <a href="contact.html?v=1782744551162" class="mobile-nav-link">Contact</a>
+        <a href="contact.html?v=1782744551162" class="mobile-cta">Let's Talk</a>
+    </div>
     <!-- Custom Cursor -->
     <div id="cursor">
         <div class="cursor-dot"></div>
         <div class="cursor-circle"></div>
     </div>
-
-    <!-- NAVIGATION -->
-    <nav class="nav">
-        <a href="home.html" class="nav-logo" aria-label="Krish Mishra Portfolio Home">
-            <span class="logo-k">KM<span class="logo-dot">.</span></span>
-        </a>
-        <div class="nav-links">
-            <a href="home.html" class="nav-link">Home</a>
-            <a href="about.html" class="nav-link">About</a>
-            <a href="skills.html" class="nav-link">Skills</a>
-            <a href="projects.html" class="nav-link active">Projects</a>
-            <a href="contact.html" class="nav-link">Contact</a>
-        </div>
-        <a href="contact.html" class="nav-contact">
-            <span>Let's Talk</span>
-            <div class="nav-contact-arrow">→</div>
-        </a>
-    </nav>
 
     <!-- Animated Grid Background -->
     <div class="grid-bg">
@@ -107,12 +121,12 @@
             <h1 class="hero-title">
                 <div class="title-wrapper">
                     <span class="title-line">
-                        <span class="word" data-text="My">My</span>
-                        <span class="word gradient" data-text="Creative">Creative</span>
+                        <span class="word" data-text="Featured">Featured</span>
+                        <span class="word gradient" data-text="Engineering">Engineering</span>
                     </span>
                     <span class="title-line">
-                        <span class="word gradient" data-text="Projects">Projects</span>
-                        <span class="word floating-emoji">🚀</span>
+                        <span class="word gradient" data-text="Showcase">Showcase</span>
+                        <span class="word floating-emoji">🛡️</span>
                     </span>
                 </div>
             </h1>
@@ -128,7 +142,7 @@
         </section>
 
         <section class="projects-gallery">
-            <!-- Project 1: CineDubs Website -->
+            <!-- Project 1: USB Remote Data Collection System (Flagship) -->
             <article class="project-card featured" data-index="01">
                 <div class="card-bg">
                     <div class="bg-gradient"></div>
@@ -139,27 +153,24 @@
                 <div class="card-content">
                     <div class="card-left">
                         <div class="project-image-wrapper">
-                            <img src="cinedubs2.webp" alt="CineDubs Website Screenshot" class="project-image" loading="lazy">
+                            <img src="architecture.png" alt="USB-Based Remote Data Collection Architecture Diagram" class="project-image" loading="lazy">
                         </div>
                     </div>
                     <div class="card-right">
                         <div class="project-meta">
-                            <span class="meta-type">Cinema Platform</span>
+                            <span class="meta-type">Digital Forensics / System Security</span>
                             <span class="meta-dot">•</span>
                             <span class="meta-year">2026</span>
                         </div>
-                        <h2 class="project-title"><span class="title-text">CineDubs Website</span><span class="title-underline"></span></h2>
-                        <p class="project-desc">A responsive web platform designed for the CineDubs multilingual cinema experience, enabling users to explore dubbed movie tracks and download matching audio syncs.</p>
+                        <h2 class="project-title"><span class="title-text">USB Remote Data Collection System</span><span class="title-underline"></span></h2>
+                        <p class="project-desc">Developed zero-installation USB system for authorized security assessments with in-memory execution and Python-based cloud C&C dashboard. Implemented modular architecture for stealth data harvesting including WiFi credentials, clipboard monitoring, and real-time screenshot capture.</p>
                         <div class="project-tech">
-                            <span class="tech-pill">React</span><span class="tech-pill">HTML5</span><span class="tech-pill">CSS3</span><span class="tech-pill">JavaScript</span>
+                            <span class="tech-pill">C/C++</span><span class="tech-pill">Python</span><span class="tech-pill">Cryptography</span><span class="tech-pill">System Auditing</span><span class="tech-pill">Stealth Ingestion</span><span class="tech-pill">Bash</span>
                         </div>
                         <div class="project-actions">
-                            <a href="https://cine-dubs.vercel.app/" class="action-btn primary" target="_blank" rel="noopener">
-                                <span>View Live</span>
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
-                            </a>
-                            <a href="https://github.com/kri297/CineDubs" class="action-btn secondary" target="_blank" rel="noopener" aria-label="View CineDubs Source Code on GitHub">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                            <a href="https://github.com/kri297/harvest-dashboard" class="action-btn primary" target="_blank" rel="noopener">
+                                <span>View Code</span>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
                             </a>
                         </div>
                     </div>
@@ -179,19 +190,19 @@
                 <div class="card-content">
                     <div class="card-left">
                         <div class="project-image-wrapper">
-                            <img src="algobuddy2.webp" alt="AlgoBuddy Screenshot" class="project-image" loading="lazy">
+                            <img src="algobuddy2.webp" alt="AlgoBuddy DSA Platform Screenshot" class="project-image" loading="lazy">
                         </div>
                     </div>
                     <div class="card-right">
                         <div class="project-meta">
-                            <span class="meta-type">DSA Visualizer</span>
+                            <span class="meta-type">DSA Platform / AI Assistant</span>
                             <span class="meta-dot">•</span>
                             <span class="meta-year">2026</span>
                         </div>
                         <h2 class="project-title"><span class="title-text">AlgoBuddy</span><span class="title-underline"></span></h2>
                         <p class="project-desc">An intelligent DSA learning companion featuring interactive algorithm visualizations, practice problems with auto-evaluation, and proficiency-based learning paths.</p>
                         <div class="project-tech">
-                            <span class="tech-pill">React</span><span class="tech-pill">TypeScript</span><span class="tech-pill">CSS3</span><span class="tech-pill">Algorithms</span>
+                            <span class="tech-pill">React</span><span class="tech-pill">TypeScript</span><span class="tech-pill">CSS3</span><span class="tech-pill">Algorithms</span><span class="tech-pill">DSA</span>
                         </div>
                         <div class="project-actions">
                             <a href="https://my-algoo-buddy.vercel.app/" class="action-btn primary" target="_blank" rel="noopener">
@@ -208,7 +219,7 @@
                 <div class="card-shine"></div>
             </article>
 
-            <!-- Project 3: Fresh Tray -->
+            <!-- Project 3: AI Video Accessibility Pipeline -->
             <article class="project-card" data-index="03">
                 <div class="card-bg">
                     <div class="bg-gradient"></div>
@@ -219,27 +230,24 @@
                 <div class="card-content">
                     <div class="card-left">
                         <div class="project-image-wrapper">
-                            <img src="Screenshot 2025-12-29 131817.webp" alt="Fresh Tray Website Screenshot" class="project-image" loading="lazy">
+                            <img src="podcast2.webp" alt="AI Video Accessibility Pipeline Screenshot" class="project-image" loading="lazy">
                         </div>
                     </div>
                     <div class="card-right">
                         <div class="project-meta">
-                            <span class="meta-type">NGO & E-Commerce</span>
+                            <span class="meta-type">AI Pipeline / Cloud Engineering</span>
                             <span class="meta-dot">•</span>
-                            <span class="meta-year">2025</span>
+                            <span class="meta-year">2026</span>
                         </div>
-                        <h2 class="project-title"><span class="title-text">Fresh Tray</span><span class="title-underline"></span></h2>
-                        <p class="project-desc">A full-featured NGO platform making technology accessible for social good, featuring AI-powered chatbot, location tracking, and e-commerce for donations.</p>
+                        <h2 class="project-title"><span class="title-text">AI Video Accessibility Pipeline</span><span class="title-underline"></span></h2>
+                        <p class="project-desc">An automated cloud pipeline designed to ingest video streams, extract and transcribe audio, generate translation layers, and output synchronized accessibility captions using Google Cloud AI APIs.</p>
                         <div class="project-tech">
-                            <span class="tech-pill">HTML5</span><span class="tech-pill">CSS3</span><span class="tech-pill">JavaScript</span><span class="tech-pill">EmailJS</span>
+                            <span class="tech-pill">Python</span><span class="tech-pill">OpenAI API</span><span class="tech-pill">Google Cloud Speech-to-Text</span><span class="tech-pill">Node.js</span><span class="tech-pill">FFmpeg</span>
                         </div>
                         <div class="project-actions">
-                            <a href="https://freshtray-mges.vercel.app/" class="action-btn primary" target="_blank" rel="noopener">
-                                <span>View Live</span>
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
-                            </a>
-                            <a href="https://github.com/kri297/NGO_WEBSITE" class="action-btn secondary" target="_blank" rel="noopener" aria-label="View Fresh Tray Source Code on GitHub">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                            <a href="https://github.com/kri297/AI-Video-Accessibility" class="action-btn primary" target="_blank" rel="noopener">
+                                <span>View Code</span>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
                             </a>
                         </div>
                     </div>
@@ -264,14 +272,14 @@
                     </div>
                     <div class="card-right">
                         <div class="project-meta">
-                            <span class="meta-type">Database Learning</span>
+                            <span class="meta-type">Database Architecture / SQL Optimization</span>
                             <span class="meta-dot">•</span>
                             <span class="meta-year">2025</span>
                         </div>
-                        <h2 class="project-title"><span class="title-text">DBMS Project</span><span class="title-underline"></span></h2>
-                        <p class="project-desc">A comprehensive database management system featuring secure user authentication, complex query optimization, transaction management, and stored procedures.</p>
+                        <h2 class="project-title"><span class="title-text">DBMS Learning Platform &amp; Tourism Management</span><span class="title-underline"></span></h2>
+                        <p class="project-desc">A comprehensive relational database application demonstrating complex query optimization, relational database integrity constraints, normal forms (1NF-3NF), indexing strategies, and stored procedures for database transactions.</p>
                         <div class="project-tech">
-                            <span class="tech-pill">SQL</span><span class="tech-pill">MySQL</span><span class="tech-pill">Database Design</span><span class="tech-pill">Stored Procedures</span>
+                            <span class="tech-pill">SQL</span><span class="tech-pill">MySQL</span><span class="tech-pill">Database Design</span><span class="tech-pill">Stored Procedures</span><span class="tech-pill">Schema Normalization</span>
                         </div>
                         <div class="project-actions">
                             <a href="https://dbms-project1.vercel.app/" class="action-btn primary" target="_blank" rel="noopener">
@@ -288,7 +296,7 @@
                 <div class="card-shine"></div>
             </article>
 
-            <!-- Project 5: Podcast Player -->
+            <!-- Project 5: Fresh Tray -->
             <article class="project-card" data-index="05">
                 <div class="card-bg">
                     <div class="bg-gradient"></div>
@@ -299,72 +307,32 @@
                 <div class="card-content">
                     <div class="card-left">
                         <div class="project-image-wrapper">
-                            <img src="podcast2.webp" alt="Podcast Player Screenshot" class="project-image" loading="lazy">
+                            <img src="Screenshot 2025-12-29 131817.webp" alt="Fresh Tray Website Screenshot" class="project-image" loading="lazy">
                         </div>
                     </div>
                     <div class="card-right">
                         <div class="project-meta">
-                            <span class="meta-type">Web Player</span>
+                            <span class="meta-type">Social Good / Web App</span>
                             <span class="meta-dot">•</span>
                             <span class="meta-year">2025</span>
                         </div>
-                        <h2 class="project-title"><span class="title-text">Podcast Player</span><span class="title-underline"></span></h2>
-                        <p class="project-desc">A modern web-based podcast player with seamless audio controls, playlist management, and responsive design.</p>
+                        <h2 class="project-title"><span class="title-text">Fresh Tray</span><span class="title-underline"></span></h2>
+                        <p class="project-desc">A collaborative web platform engineered for NGO food redistribution, optimizing delivery routes, providing real-time donor dashboard metrics, and integrating responsive client forms.</p>
                         <div class="project-tech">
-                            <span class="tech-pill">HTML5</span><span class="tech-pill">CSS3</span><span class="tech-pill">JavaScript</span><span class="tech-pill">Web Audio API</span>
+                            <span class="tech-pill">HTML5</span><span class="tech-pill">CSS3</span><span class="tech-pill">JavaScript</span><span class="tech-pill">EmailJS</span><span class="tech-pill">Responsive Design</span>
                         </div>
                         <div class="project-actions">
-                            <a href="https://my-podcast-player.vercel.app/" class="action-btn primary" target="_blank" rel="noopener">
+                            <a href="https://freshtray-mges.vercel.app/" class="action-btn primary" target="_blank" rel="noopener">
                                 <span>View Live</span>
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                             </a>
-                            <a href="https://github.com/kri297/Podcast-player" class="action-btn secondary" target="_blank" rel="noopener" aria-label="View Podcast Player Source Code on GitHub">
+                            <a href="https://github.com/kri297/NGO_WEBSITE" class="action-btn secondary" target="_blank" rel="noopener" aria-label="View Fresh Tray Source Code on GitHub">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="card-number">05</div>
-                <div class="card-shine"></div>
-            </article>
-
-            <!-- Project 6: Task Manager -->
-            <article class="project-card" data-index="06">
-                <div class="card-bg">
-                    <div class="bg-gradient"></div>
-                    <div class="bg-noise"></div>
-                    <div class="bg-glow"></div>
-                </div>
-                <div class="card-border"></div>
-                <div class="card-content">
-                    <div class="card-left">
-                        <div class="project-image-wrapper">
-                            <img src="Screenshot 2025-12-31 132126.webp" alt="Task Manager Screenshot" class="project-image" loading="lazy">
-                        </div>
-                    </div>
-                    <div class="card-right">
-                        <div class="project-meta">
-                            <span class="meta-type">Productivity Tool</span>
-                            <span class="meta-dot">•</span>
-                            <span class="meta-year">2025</span>
-                        </div>
-                        <h2 class="project-title"><span class="title-text">Task Manager</span><span class="title-underline"></span></h2>
-                        <p class="project-desc">A terminal-based Python application with task scheduling, productivity analysis, auto-save, and matplotlib visualizations.</p>
-                        <div class="project-tech">
-                            <span class="tech-pill">Python</span><span class="tech-pill">Matplotlib</span><span class="tech-pill">Pickle</span>
-                        </div>
-                        <div class="project-actions">
-                            <a href="https://github.com/kri297/TaskManager/blob/main/590015053_KRISH_CODE.py" class="action-btn primary" target="_blank" rel="noopener">
-                                <span>View Live</span>
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
-                            </a>
-                            <a href="https://github.com/kri297/TaskManager" class="action-btn secondary" target="_blank" rel="noopener" aria-label="View Task Manager Source Code on GitHub">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-number">06</div>
                 <div class="card-shine"></div>
             </article>
         </section>
@@ -426,39 +394,39 @@
         <section class="marquee-section">
             <div class="marquee-track">
                 <div class="marquee-content">
-                    <span class="marquee-item">React</span>
+                    <span class="marquee-item">Cybersecurity</span>
                     <span class="marquee-star">✦</span>
-                    <span class="marquee-item">Node.js</span>
+                    <span class="marquee-item">Software Engineering</span>
                     <span class="marquee-star">✦</span>
-                    <span class="marquee-item">Python</span>
+                    <span class="marquee-item">Cryptography</span>
                     <span class="marquee-star">✦</span>
-                    <span class="marquee-item">TypeScript</span>
+                    <span class="marquee-item">Java &amp; DSA</span>
                     <span class="marquee-star">✦</span>
-                    <span class="marquee-item">Next.js</span>
+                    <span class="marquee-item">Secure Development</span>
                     <span class="marquee-star">✦</span>
-                    <span class="marquee-item">MongoDB</span>
+                    <span class="marquee-item">Threat Analysis</span>
                     <span class="marquee-star">✦</span>
-                    <span class="marquee-item">TensorFlow</span>
+                    <span class="marquee-item">Digital Forensics</span>
                     <span class="marquee-star">✦</span>
-                    <span class="marquee-item">Firebase</span>
+                    <span class="marquee-item">Database Design</span>
                     <span class="marquee-star">✦</span>
                 </div>
                 <div class="marquee-content" aria-hidden="true">
-                    <span class="marquee-item">React</span>
+                    <span class="marquee-item">Cybersecurity</span>
                     <span class="marquee-star">✦</span>
-                    <span class="marquee-item">Node.js</span>
+                    <span class="marquee-item">Software Engineering</span>
                     <span class="marquee-star">✦</span>
-                    <span class="marquee-item">Python</span>
+                    <span class="marquee-item">Cryptography</span>
                     <span class="marquee-star">✦</span>
-                    <span class="marquee-item">TypeScript</span>
+                    <span class="marquee-item">Java &amp; DSA</span>
                     <span class="marquee-star">✦</span>
-                    <span class="marquee-item">Next.js</span>
+                    <span class="marquee-item">Secure Development</span>
                     <span class="marquee-star">✦</span>
-                    <span class="marquee-item">MongoDB</span>
+                    <span class="marquee-item">Threat Analysis</span>
                     <span class="marquee-star">✦</span>
-                    <span class="marquee-item">TensorFlow</span>
+                    <span class="marquee-item">Digital Forensics</span>
                     <span class="marquee-star">✦</span>
-                    <span class="marquee-item">Firebase</span>
+                    <span class="marquee-item">Database Design</span>
                     <span class="marquee-star">✦</span>
                 </div>
             </div>

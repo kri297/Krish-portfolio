@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020813" />
+      <stop offset="100%" stop-color="#0a1530" />
+    </linearGradient>
+
+    <!-- Metallic/Teal Gradients for Cards -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f2042" />
+      <stop offset="100%" stop-color="#081026" />
+    </linearGradient>
+
+    <linearGradient id="usbGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00b4d8" />
+      <stop offset="100%" stop-color="#0077b6" />
+    </linearGradient>
+
+    <linearGradient id="encryptGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#00b4d8" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="cyanGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComponentTransfer in="blur" result="glow1">
+        <feFuncA type="linear" slope="0.6"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode in="glow1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad)" rx="16" />
+
+  <!-- Grid Pattern Overlay -->
+  <g opacity="0.08">
+    <path d="M 0,50 L 800,50 M 0,100 L 800,100 M 0,150 L 800,150 M 0,200 L 800,200 M 0,250 L 800,250 M 0,300 L 800,300 M 0,350 L 800,350 M 0,400 L 800,400 M 0,450 L 800,450" stroke="#00b4d8" stroke-width="1" />
+    <path d="M 50,0 L 50,500 M 100,0 L 100,500 M 150,0 L 150,500 M 200,0 L 200,500 M 250,0 L 250,500 M 300,0 L 300,500 M 350,0 L 350,500 M 400,0 L 400,500 M 450,0 L 450,500 M 500,0 L 500,500 M 550,0 L 550,500 M 600,0 L 600,500 M 650,0 L 650,500 M 700,0 L 700,500 M 750,0 L 750,500" stroke="#00b4d8" stroke-width="1" />
+  </g>
+
+  <!-- Title / Logo Area -->
+  <text x="35" y="45" font-family="'Space Mono', monospace" font-size="14" fill="#00b4d8" letter-spacing="1.5" font-weight="700">SYSTEM ARCHITECTURE</text>
+  <text x="35" y="65" font-family="'Outfit', sans-serif" font-size="18" fill="#f8fafc" font-weight="600">USB Remote Data Collection &amp; Diagnostics</text>
+
+  <!-- Flow Lines (Background animations style) -->
+  <!-- Line 1: USB to Agent -->
+  <path d="M 195,250 L 300,250" fill="none" stroke="#0077b6" stroke-dasharray="6,4" stroke-width="2" />
+  <!-- Line 2: Agent to Encryption -->
+  <path d="M 430,250 L 500,250" fill="none" stroke="#00b4d8" stroke-width="2" />
+  <!-- Line 3: Encryption to DB / Server -->
+  <path d="M 630,250 L 700,250" fill="none" stroke="#10b981" stroke-dasharray="6,4" stroke-width="2" />
+
+  <!-- Node 1: TARGET ENDPOINT (USB) -->
+  <g transform="translate(60, 170)">
+    <!-- Base Card -->
+    <rect width="135" height="160" rx="12" fill="url(#cardGrad)" stroke="url(#usbGrad)" stroke-width="1.5" />
+    <rect width="135" height="160" rx="12" fill="none" stroke="#00b4d8" stroke-width="2" opacity="0.3" filter="url(#glow)" />
+    
+    <!-- USB Icon Graphic -->
+    <path d="M 67.5,35 L 67.5,70 M 67.5,35 L 52.5,45 M 67.5,35 L 82.5,45 M 52.5,45 M 82.5,45 M 67.5,75 M 67.5,30 M 52.5,40" stroke="#00b4d8" stroke-width="2" stroke-linecap="round" />
+    <circle cx="67.5" cy="30" r="4" fill="#00b4d8" />
+    <rect x="50.5" y="38" width="4" height="4" fill="#00b4d8" />
+    <polygon points="82.5,36 86.5,41 78.5,41" fill="#00b4d8" />
+
+    <!-- Labels -->
+    <text x="67.5" y="115" font-family="'Outfit', sans-serif" font-size="13" font-weight="600" fill="#f8fafc" text-anchor="middle">USB Device</text>
+    <text x="67.5" y="135" font-family="'Space Mono', monospace" font-size="10" fill="#94a3b8" text-anchor="middle">Diagnostics Mode</text>
+  </g>
+
+  <!-- Node 2: SECURE INGESTION AGENT -->
+  <g transform="translate(295, 150)">
+    <!-- Base Card -->
+    <rect width="135" height="200" rx="12" fill="url(#cardGrad)" stroke="#00b4d8" stroke-width="1.5" />
+    <rect width="135" height="200" rx="12" fill="none" stroke="#00b4d8" stroke-width="1.5" opacity="0.2" filter="url(#glow)" />
+    
+    <!-- Shield/Secure Graphic -->
+    <path d="M 67.5,40 C 67.5,40 87.5,50 87.5,65 C 87.5,85 67.5,95 67.5,95 C 67.5,95 47.5,85 47.5,65 C 47.5,50 67.5,40 67.5,40 Z" fill="none" stroke="#00b4d8" stroke-width="2" />
+    <path d="M 67.5,48 L 67.5,87" stroke="#00b4d8" stroke-width="1.5" stroke-dasharray="2,2" />
+    <circle cx="67.5" cy="65" r="5" fill="#10b981" filter="url(#cyanGlow)" />
+
+    <!-- Labels -->
+    <text x="67.5" y="130" font-family="'Outfit', sans-serif" font-size="14" font-weight="600" fill="#f8fafc" text-anchor="middle">Ingestion Agent</text>
+    <text x="67.5" y="150" font-family="'Space Mono', monospace" font-size="10" fill="#00b4d8" text-anchor="middle">System Monitor</text>
+    <text x="67.5" y="170" font-family="'Space Mono', monospace" font-size="9" fill="#94a3b8" text-anchor="middle">Audit Logs Active</text>
+  </g>
+
+  <!-- Node 3: AES-256 ENCRYPTION BRIDGE -->
+  <g transform="translate(500, 185)">
+    <rect width="130" height="130" rx="12" fill="url(#cardGrad)" stroke="url(#encryptGrad)" stroke-width="1.5" />
+    
+    <!-- Lock Graphic -->
+    <rect x="52" y="55" width="26" height="20" rx="3" fill="none" stroke="#10b981" stroke-width="2" />
+    <path d="M 57,55 L 57,47 C 57,40 73,40 73,47 L 73,55" fill="none" stroke="#10b981" stroke-width="2" />
+    <circle cx="65" cy="65" r="2" fill="#10b981" />
+
+    <!-- Labels -->
+    <text x="65" y="100" font-family="'Outfit', sans-serif" font-size="13" font-weight="600" fill="#f8fafc" text-anchor="middle">AES-256</text>
+    <text x="65" y="115" font-family="'Space Mono', monospace" font-size="9" fill="#10b981" text-anchor="middle">Encrypted Tunnel</text>
+  </g>
+
+  <!-- Node 4: REMOTE DASHBOARD / SECURE SERVER -->
+  <g transform="translate(700, 170)">
+    <rect width="60" height="160" rx="10" fill="url(#cardGrad)" stroke="#10b981" stroke-width="1.5" />
+    
+    <!-- Database Plates -->
+    <rect x="15" y="30" width="30" height="12" rx="3" fill="none" stroke="#94a3b8" stroke-width="2" />
+    <rect x="15" y="50" width="30" height="12" rx="3" fill="none" stroke="#94a3b8" stroke-width="2" />
+    <rect x="15" y="70" width="30" height="12" rx="3" fill="none" stroke="#10b981" stroke-width="2" />
+    <circle cx="23" cy="76" r="2" fill="#10b981" />
+
+    <!-- Labels -->
+    <text x="30" y="115" font-family="'Outfit', sans-serif" font-size="12" font-weight="600" fill="#f8fafc" text-anchor="middle">Control</text>
+    <text x="30" y="132" font-family="'Space Mono', monospace" font-size="9" fill="#94a3b8" text-anchor="middle">Dashboard</text>
+  </g>
+
+  <!-- Security Banner Indicator at bottom -->
+  <g transform="translate(240, 420)">
+    <rect width="320" height="35" rx="6" fill="#0c1938" stroke="#00b4d8" stroke-width="1" opacity="0.6"/>
+    <circle cx="20" cy="18" r="4" fill="#10b981" filter="url(#cyanGlow)" />
+    <text x="40" y="22" font-family="'Space Mono', monospace" font-size="11" fill="#f8fafc">SYSTEM STATUS: SECURE INGESTION</text>
+  </g>
+</svg>

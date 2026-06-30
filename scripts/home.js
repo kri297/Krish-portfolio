@@ -358,7 +358,7 @@ function initTypedText() {
     const typedElement = document.getElementById('typed-text');
     if (!typedElement) return;
 
-    const words = ['Creative Developer', 'UI/UX Designer', 'Problem Solver', 'Full Stack Dev', 'Tech Enthusiast'];
+    const words = ['Cybersecurity Specialist', 'Software Engineer', 'Java & DSA Enthusiast', 'UPES ACM Vice Chair'];
     let wordIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
@@ -603,16 +603,14 @@ document.addEventListener('keydown', (e) => {
 });
 
 function activateEasterEgg() {
-    document.body.style.animation = 'rainbow 2s linear';
-    
     const message = document.createElement('div');
-    message.innerHTML = '🎉 You found the secret! You\'re awesome! 🎉';
+    message.innerHTML = '🛡️ System Secure • Integrity Verified 🛡️';
     message.style.cssText = `
         position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background: linear-gradient(135deg, #6366f1, #ec4899);
+        background: var(--gradient-1);
         color: white;
         padding: 2rem 4rem;
         border-radius: 20px;
@@ -620,14 +618,13 @@ function activateEasterEgg() {
         font-weight: 700;
         z-index: 99999;
         animation: bounceIn 0.5s ease;
-        box-shadow: 0 20px 60px rgba(99, 102, 241, 0.5);
+        box-shadow: 0 20px 60px rgba(0, 180, 216, 0.5);
     `;
     document.body.appendChild(message);
 
     setTimeout(() => {
         message.style.animation = 'fadeOut 0.5s ease forwards';
         setTimeout(() => message.remove(), 500);
-        document.body.style.animation = '';
     }, 3000);
 }
 
