@@ -1,6 +1,6 @@
-# 💼 Krish Mishra | Portfolio Website
+# 💼 Krish Mishra | Professional Portfolio
 
-> **Professional portfolio showcasing my web development journey** — Built with vanilla HTML, CSS, and JavaScript.
+> **A high-end, premium portfolio website showcasing my journey in Cybersecurity, Software Engineering, and Web Development.** 
 
 [![Live Website](https://img.shields.io/badge/🌐_Live_Site-Visit_Portfolio-blue?style=for-the-badge)](https://portfolioofkrish.vercel.app)
 [![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -14,161 +14,75 @@
 
 ---
 
-## ✨ Features
+## ✨ Features & Architecture
 
-### 🔧 **Current Status**
+This portfolio has been completely rebuilt to feature a modern, multi-page architecture with state-of-the-art UI trends.
+
+### 🎨 **Modern Design System**
+- **Glassmorphism:** Sleek, transparent floating navbars and frosted glass card effects.
+- **Bento Box Grids:** Highly engaging, asymmetrical "Bento Box" layouts used on the Skills page.
+- **Interactive Dashboards:** Dynamic category switching without page reloads.
+- **Neon Glow Effects:** Subtle radial gradients and magnetic hover effects on buttons and cards.
+- **Fully Responsive:** Beautifully adapts to all screen sizes (Desktop, Tablet, and Mobile).
+
+### 🚀 **Sections**
 | Section | Description | Status |
 |---------|-------------|--------|
-| **👤 About** | Personal story and professional journey | ✅ Complete |
-| **💻 Skills** | Technical expertise and technologies | ✅ Complete |
-| **🎓 Experience** | Background and certifications | ✅ Complete |
-| **📧 Contact** | Working email form | ✅ Complete |
-| **📱 Mobile** | Responsive design | 🚧 In Development |
+| **🏠 Home** | Engaging hero section with liquid cursor and scrolling tech marquees. | ✅ Complete |
+| **👤 About** | Personal story, professional journey, and timeline. | ✅ Complete |
+| **💻 Skills** | Interactive Bento Dashboard featuring Cybersecurity, SWE, and Web Dev. | ✅ Complete |
+| **🚀 Projects** | Project showcases with GitHub and Live demo links. | ✅ Complete |
+| **📧 Contact** | Working email contact form and social links. | ✅ Complete |
 
-### 🎨 **Design**
-- Clean, professional desktop layout
-- Interactive hover effects
-- Smooth transitions and animations
-- Modern typography and color scheme
-
-### 💻 **Technical**
-- Vanilla JavaScript - no frameworks
-- Semantic HTML5 structure
-- Custom CSS3 styling
-- Working contact form
-- Fast loading performance
-
----
-
-## 🛠️ Tech Stack
-
-**Frontend:** HTML5, CSS3, JavaScript (Vanilla)  
-**Deployment:** Vercel  
-**Approach:** Desktop-first, mobile coming soon
+### 💻 **Technical Stack**
+- **Frontend:** Vanilla HTML5, CSS3, JavaScript (ES6+). Zero heavy frameworks, ensuring blazing fast load times.
+- **Performance:** Automated Node.js scripts for in-place image optimization (WebP generation).
+- **Deployment:** Vercel (CI/CD integration).
 
 ---
 
 ## 📂 Project Structure
 
 ```
-portfolio-website/
-├── 📄 index.html    # Main HTML structure
-├── 🎨 style.css     # Complete stylesheet  
-├── ⚡ script.js     # JavaScript functionality
-└── 📝 README.md     # Documentation
+Krish-portfolio/
+├── 📄 home.html, about.html, skills.html, ... # Page structures
+├── 🎨 styles/                                 # Modular CSS stylesheets
+│   ├── main-v3.css                            # Global tokens, navbar, animations
+│   ├── home.css, skills.css, projects.css...  # Page-specific styles
+├── ⚡ scripts/                                # Vanilla JS logic
+│   ├── main.js, update-nav.js                 # Global interactions
+│   ├── compress-images.js                     # Node.js build tools
+├── 🖼️ IMAGES/                                 # Optimized WebP assets
+└── 📝 README.md                               # Project documentation
 ```
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Getting Started Locally
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/kri297/portfolio-website.git
+   git clone https://github.com/kri297/Krish-portfolio.git
    ```
 
-2. **Open index.html** in your browser or use Live Server
+2. **Run a local server**
+   Because this project uses modular files, you should serve it over HTTP rather than opening the files directly.
+   ```bash
+   npx serve .
+   ```
+   Or use the **Live Server** extension in VS Code.
 
-3. **Explore the code** - All functionality in 3 clean files
-
----
-
-## 🖼️ Optimizing the profile image (quick guide)
-
-To get best performance, generate WebP and a few resized fallbacks for `photo.jpg`. Run these locally (ImageMagick + cwebp examples):
-
-Windows (PowerShell) example using ImageMagick `magick` and `cwebp`:
-
-```powershell
-# Create resized JPEGs
-magick photo.jpg -resize 400x400 photo-400.jpg
-magick photo.jpg -resize 800x800 photo-800.jpg
-magick photo.jpg -resize 1200x1200 photo-1200.jpg
-
-# Convert to WebP (requires cwebp)
-cwebp -q 80 photo-400.jpg -o photo-400.webp
-cwebp -q 80 photo-800.jpg -o photo-800.webp
-cwebp -q 80 photo-1200.jpg -o photo-1200.webp
-```
-
-After generating these files, the `<picture>` element in `index.html` will serve the best image for each device.
+3. **Image Optimization Script (Optional)**
+   If you add new images, run the included Node.js script to automatically compress them into `.webp` format for maximum performance:
+   ```bash
+   npm install
+   node scripts/compress-images.js
+   ```
 
 ---
 
-### Automatic image generation (Node.js)
+## 👨‍💻 Author
 
-If you'd prefer to generate the resized files inside the project, there's a Node.js script that uses `sharp`.
-
-1. Install dependencies:
-
-```powershell
-npm install
-```
-
-2. Place your high-resolution `photo.jpg` in the project root (replace the existing file).
-
-3. Run the optimizer:
-
-```powershell
-npm run optimize-images
-```
-
-This produces `photo-400.jpg|webp`, `photo-800.jpg|webp`, and `photo-1200.jpg|webp` in the project root.
-
----
-
-## 🌟 Why This Portfolio
-
-- **🎯 Handcrafted Code** - Every line written from scratch
-- **⚡ No Dependencies** - Pure web technologies only  
-- **🖥️ Desktop Optimized** - Professional desktop experience
-- **🎨 Clean Architecture** - Simple 3-file structure
-- **🚀 Fast Performance** - Lightweight and optimized
-- **📈 Learning Showcase** - Demonstrates core web skills
-
----
-
-## 🔮 Coming Soon
-
-- 📱 Mobile responsive design
-- 🎨 Enhanced animations  
-- ⚡ Performance improvements
-- 🔍 SEO optimizations
-
----
-
-## 🤝 Let's Connect
-
-**📬 Contact Me:**
-- **📧 Email**: [krishmishra121301@gmail.com](mailto:krishmishra121301@gmail.com)
-- **💼 LinkedIn**: [linkedin.com/in/krishmishra](https://linkedin.com/in/krishmishra)
-- **🌐 Portfolio**: [portfolioofkrish.vercel.app](https://portfolioofkrish.vercel.app)
-- **💻 GitHub**: [github.com/kri297](https://github.com/kri297)
-
-**💬 Open to discuss:**
-- Web development collaborations
-- Frontend opportunities
-- Code reviews and feedback
-- Mentorship and learning
-
----
-
-## 📜 License
-
-**© 2024 Krish Mishra**
-
-This is a personal portfolio project. Feel free to:
-- ✅ Learn from the code structure
-- ✅ Get inspired by the design
-- ✅ Reference implementation techniques
-
-Please don't:
-- ❌ Copy the design directly
-- ❌ Use my personal content
-- ❌ Claim the work as your own
-
-**Found it helpful? Give it a ⭐ on GitHub!**
-
----
-
-> *"Building the web with passion, one project at a time."*
+**Krish Mishra**  
+- [LinkedIn](https://www.linkedin.com/in/krish-mishra-45933a306/)
+- [GitHub](https://github.com/kri297)
